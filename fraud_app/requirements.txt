@@ -1,7 +1,8 @@
-streamlit
-openai
-sounddevice
-numpy
-scipy
-whisper
-requests
+fastapi==0.115.13
+numpy==2.3.0
+pydantic==2.11.7
+Requests==2.32.4
+scipy==1.15.3
+sounddevice==0.5.2
+streamlit==1.45.1
+whisper==1.1.10
