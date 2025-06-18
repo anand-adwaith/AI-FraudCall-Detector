@@ -29,16 +29,15 @@ This function initializes the model and tokenizer, preprocesses the input text,
 tokenizes it, generates the translation, and postprocesses the output.
 inputs:
     input_text (str): The text to be translated from an Indic language to English.
-    src_lang_id (str): The source language code of the input text (e.g., "hin_Deva" for Hindi).
-        Assamese: "asm_Beng"                Bengali: "ben_Beng"             Bodo: "brx_Deva"
-        Dogri: "doi_Deva"                   Gujarati: "guj_Gujr"            Hindi: "hin_Deva"
-        Kannada: "kan_Knda"                 Konkani: "gom_Deva"             Kashmiri (Arabic): "kas_Arab"
-        Kashmiri (Devanagari): "kas_Deva"   Maithili: "mai_Deva"            Malayalam: "mal_Mlym"
-        Manipuri (Bengali): "mni_Beng"      Manipuri (Meitei): "mni_Mtei"   Marathi: "mar_Deva"
-        Nepali: "npi_Deva"                  Odia: "ory_Orya"                Punjabi: "pan_Guru"
-        Sanskrit: "san_Deva"                Santali: "sat_Olck"             Sindhi (Arabic): "snd_Arab"
-        Sindhi (Devanagari): "snd_Deva"     Tamil: "tam_Taml"               Telugu: "tel_Telu"
-        Urdu: "urd_Arab"                    English: "eng_Latn"
+    src_lang_id (str): The source language code of the input text (e.g., "hi" for Hindi).
+        Assamese: "as"      Bengali: "bn"       Bodo: "brx"
+        Dogri: "doi"        Gujarati: "gu"      Hindi: "hi"
+        Kannada: "kn"       Konkani: "kok"      Kashmiri: "ks"
+        Maithili: "mai"     Malayalam: "ml"     Manipuri: "mni"
+        Marathi: "mr"       Nepali: "ne"        Odia: "or"
+        Punjabi: "pa"       Sanskrit: "sa"      Santali: "sat"
+        Sindhi: "sd"        Tamil: "ta"         Telugu: "te"
+        Urdu: "ur"
 outputs:
     translation (str): The translated text in English.
 """
@@ -48,8 +47,36 @@ def translate_indic_to_english(input_text, src_lang_id):
 
     ip = IndicProcessor(inference=True)
 
+    lang_code_map = {
+    "as": "asm_Beng",
+    "bn": "ben_Beng",
+    "brx": "brx_Deva",
+    "doi": "doi_Deva",
+    "gu": "guj_Gujr",
+    "hi": "hin_Deva",
+    "kn": "kan_Knda",
+    "kok": "gom_Deva",
+    "ks": "kas_Deva",
+    "mai": "mai_Deva",
+    "ml": "mal_Mlym",
+    "mni": "mni_Mtei",
+    "mr": "mar_Deva",
+    "ne": "npi_Deva",
+    "or": "ory_Orya",
+    "pa": "pan_Guru",
+    "sa": "san_Deva",
+    "sat": "sat_Olck",
+    "sd": "snd_Deva",
+    "ta": "tam_Taml",
+    "te": "tel_Telu",
+    "ur": "urd_Arab",
+    "en": "eng_Latn"
+}
+
+    src_lang_id_internal = lang_code_map.get(src_lang_id)
+
     # Preprocess the input text
-    input_batch = ip.preprocess_batch([input_text], src_lang=src_lang_id, tgt_lang="eng_Latn")
+    input_batch = ip.preprocess_batch([input_text], src_lang=src_lang_id_internal, tgt_lang="eng_Latn")
 
     # Tokenize the input text
     inputs = indic_en_tokenizer(
@@ -84,6 +111,6 @@ def translate_indic_to_english(input_text, src_lang_id):
     del indic_en_tokenizer, indic_en_model
 
     print(f"{src_lang_id}: {input_text}")
-    print(f"{"eng_Latn"}: {translation}")
+    print(f"{"en"}: {translation}")
 
     return translation
