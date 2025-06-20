@@ -1,0 +1,7 @@
+onnxruntime
+transformers
+torch
+torchaudio
+-e ./3rd-Party/IndicTransToolkit
+python-multipart
+streamlit

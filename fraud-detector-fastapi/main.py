@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import shutil
 import os
 import audio_processing.asr as asr
-import audio_processing.translation as translation
+import audio_processing.translate as translation
 
 app = FastAPI()
 
