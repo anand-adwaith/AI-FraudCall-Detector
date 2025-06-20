@@ -34,3 +34,26 @@ class QueryResponse(BaseModel):
 class HealthResponse(BaseModel):
     status: str
     message: str
+
+class AudioTranscriptionRequest(BaseModel):
+    language: str = Field(default="hi", description="Language ID for transcription")
+    mode: AnalysisMode = Field(default=AnalysisMode.RAG, description="Analysis mode: RAG or few_shot")
+
+class AudioTranscriptionResponse(BaseModel):
+    success: bool
+    transcription: Optional[str] = None
+    language: Optional[str] = None
+    error: Optional[str] = None
+    analysis: Optional[ClassificationResponse] = None
+
+class AudioClassificationRequest(BaseModel):
+    file_path: str = Field(..., description="Path to the audio file to analyze")
+    language_id: str = Field(default="hi", description="Language ID for transcription (e.g., 'hi' for Hindi)")
+    model_type: MessageType = Field(default=MessageType.CALL, description="Model to use: call or text")
+    analysis_type: AnalysisMode = Field(default=AnalysisMode.RAG, description="Analysis type: RAG or few_shot")
+
+class AudioClassificationResponse(BaseModel):
+    transcription: Optional[str] = Field(None, description="The transcribed text from the audio file")
+    translation: Optional[str] = Field(None, description="The English translation of the transcription") 
+    classification: Optional[ClassificationResponse] = Field(None, description="The classification results")
+    error: Optional[str] = Field(None, description="Error message if any part of the process failed")

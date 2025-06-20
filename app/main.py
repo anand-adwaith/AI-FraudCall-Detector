@@ -18,7 +18,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import routers
 from app.routers.qa import router as qa_router
+from app.routers.speech import router as speech_router
 from app.utils import ModelManager
+from app.services.asr import initialize_asr_model
+from app.services.translate import initialize_translate_tokenizer_and_model
 
 # Configure logging
 logging.basicConfig(
@@ -46,13 +49,27 @@ app.add_middleware(
 
 # Include routers
 app.include_router(qa_router)
+app.include_router(speech_router)
 
 @app.on_event("startup")
 async def startup_event():
     """Initialize models on startup"""
     logger.info("Starting up the server...")
-    # Initialize models in background
+    # Initialize models in background for RAG
     ModelManager.initialize()
+    
+    # Initialize speech models
+    try:
+        # Import here to avoid circular imports
+        from app.routers.speech import initialize_models
+        
+        logger.info("Initializing speech processing models...")
+        models = initialize_models()
+        logger.info(f"Successfully initialized models: {list(models.keys())}")
+    except Exception as e:
+        logger.error(f"Failed to initialize speech processing models: {str(e)}")
+        # Don't raise the exception here to allow the server to start even if model initialization fails
+        # Users will get appropriate error messages when they try to use the endpoints
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
@@ -62,6 +79,11 @@ async def global_exception_handler(request: Request, exc: Exception):
         status_code=500,
         content={"detail": f"An unexpected error occurred: {str(exc)}"}
     )
+
+
+if __name__ == "__main__":
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+
 
 # Commented out the old main function
 """
@@ -117,6 +139,3 @@ def main():
     print("\n--- LLM Classification Result (Text Few-Shot) ---")
     print(json.dumps(text_few_shot_response["answer"], indent=2))
 """
-
-if __name__ == "__main__":
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
