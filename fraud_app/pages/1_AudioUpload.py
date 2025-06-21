@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import uuid
 from datetime import datetime
-from utils import analyze_text_with_llm
+from utils import analyze_audio
 
 # Set page title
 st.title("📁 Upload Audio File")
@@ -15,6 +15,8 @@ if not os.path.exists(UPLOAD_DIR):
 # File uploader for single file
 audio_file = st.file_uploader("Upload MP3 or WAV", type=["mp3", "wav"])
 
+mode = st.selectbox("Choose analysis mode", ["rag", "few_shot"])
+lang = st.selectbox("Choose Audio Language", ["hi", "ta"])
 if audio_file:
     # Display the audio player
     st.audio(audio_file)
@@ -32,25 +34,28 @@ if audio_file:
         
         st.info(f"File saved as: {unique_filename}")
         
+        full_path = os.path.abspath(file_path)
         # Call your API with the file path
         with st.spinner("Calling transcription API..."):
-            # Replace this with your actual API call
-            # For now, let's simulate it with a direct file read
+
             try:
-                # This is where you would make your API call
-                # Example: response = requests.post(API_URL, files={'file': open(file_path, 'rb')})
-                # For demonstration, we'll just use the file path
-                
-                # REPLACE THIS with your actual API call
-                transcript = f"This is a simulated transcript for file: {unique_filename}"
-                
-                # Display the transcript
-                st.markdown(f"📝 Transcribed Text:\n> {transcript}")
+
                 
                 # Analyze the transcript
                 with st.spinner("Analyzing..."):
-                    prediction = analyze_text_with_llm(transcript.strip())
-                st.success(f"🔎 Prediction: **{prediction}**")
+                    prediction = analyze_audio(full_path,mode,lang)
+                transcript = prediction['transcription']
+                st.markdown(f"📝 Transcribed Text:\n> {transcript}")
+                st.success(f"🔎 Prediction: **{prediction['classification']['classification']}**")
+                with st.expander("🧠 Reasoning"):
+                    st.write(prediction['classification']['reasoning'])
+                with st.expander("❓ Follow-up Questions"):
+                    questions = prediction['classification']['follow_up_questions']
+                    if questions:
+                        for q in questions:
+                            st.markdown(f"- {q}")
+                    else:
+                        st.write("No follow-up questions available.")
                 
             except Exception as e:
                 st.error(f"Error processing file: {str(e)}")

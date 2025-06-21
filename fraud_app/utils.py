@@ -1,16 +1,39 @@
-# utils.py
+
 import requests
 
-def analyze_text_with_llm(text: str) -> str:
-    try:
-        url = f"https://api.agify.io/?name={text}"
-        response = requests.get(url)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            return f"API Error: {response.status_code} - {response.text}"
-    except Exception as e:
-        return f"Connection failed: {e}"
-    
+API_URL = "http://localhost:8000/api" 
+def analyze_text_with_llm(text: str, mode, message_type="call"):
+    """Send input to FastAPI analyze endpoint and return prediction result."""
+    payload = {
+        "query": text,
+        "mode": mode,
+        "message_type": message_type
+    }
 
-print(analyze_text_with_llm("John Doe") ) # Example usage, replace with actual text input in your application
+    try:
+        response = requests.post(f"{API_URL}/analyze", json=payload)
+        response.raise_for_status() 
+        return response.json()  
+    except requests.exceptions.RequestException as e:
+        return {"error": str(e)}
+
+
+def analyze_audio(filepath,mode,lang):
+    payload = {
+        "file_path": filepath,       
+        "language_id": lang,                    
+        "model_type": "call",             
+        "analysis_type": mode           
+
+    }
+
+    response = requests.post(f"{API_URL}/audio-classify", json=payload)
+
+    if response.ok:
+        return response.json()
+    else:
+        print("❌ Error:", response.status_code, response.text)
+       
+
+#print(analyze_text_with_llm('fdsafdsfdsfdfdf', 'rag', "text")['answer']['classification'])
+
