@@ -8,7 +8,7 @@ AUDIO_OUTPUT_DIR = "audio_output"
 AUDIO_OUTPUT_BASE_NAME = "audio"
 CONFIG_DIR = "config"
 API_KEY_FILE_NAME = "api_key.txt"
-DATASET_DIR = "dataset_output"
+DATASET_DIR = "call_transcript_dataset_output"
 CALL_TRANSCRIPT_FILE_PATTERN = "generated_transcript_dataset*.json"
 
 scam_categories = [
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     dataset_files = glob.glob(f"{DATASET_DIR}/{CALL_TRANSCRIPT_FILE_PATTERN}")
     for file in dataset_files:
-        num_samples = 1
+        num_samples = 2
 
         data = misc.load_json_file(file)
         # iterate the type, category, and speaker
