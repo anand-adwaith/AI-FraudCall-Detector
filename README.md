@@ -1,5 +1,7 @@
 # AI-FraudCall-Detector
-Live App available at https://frauddetectionapp.publicvm.com/
+Visit the Live App at https://frauddetectionapp.publicvm.com/
+
+Watch the Demo Video here https://drive.google.com/file/d/1IXspU9Jvv78TztyarFU5Apk1D78hK6dI/view?usp=share_link
 
 
 ## Steps for local deployment
