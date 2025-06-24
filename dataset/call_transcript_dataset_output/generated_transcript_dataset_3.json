@@ -1,0 +1,1750 @@
+[
+    {
+        "type": "fraud",
+        "category": "Emotional Manipulation",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Namaste, bhaiya, this is Vikram from SBI Customer Support. Aapka account emergency mein hai!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Namaste, Vikram ji. Kya hua? Mera account toh theek hai."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Arre, bhaiya, aapke account se fraudulent transaction ho raha hai. ₹50,000 ka transfer detect hua hai."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Kya? Maine toh koi transfer nahi kiya. Yeh kaise ho sakta hai?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Sir, yeh cyber fraud hai. Aapko turant verify karna hoga warna pura balance chala jayega."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Achha, toh kya karna hoga? Main abhi bank jaaun?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Nahi nahi, bank jaane ki zarurat nahi. Bas yeh link kholiye, http://secure.sbi-verify.com, aur apna OTP daal dijiye."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "OTP? Yeh toh dangerous lag raha hai. Main bank call karke confirm kar leta hoon."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Bhaiya, time waste mat kijiye! Yeh fraudsters aapka account khali kar denge. Abhi link kholiye!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Nahi, Vikram ji, main pehle bank se baat karunga. Aapka number do, main callback karunga."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Sir, yeh urgent hai. Call mat kijiye, bas link pe click kijiye warna hum responsible nahi honge!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Nahi, main risk nahi le sakta. Main bank jaa raha hoon. Thank you."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Fake Delivery Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Namaste, this is Neha from BlueDart Courier. Sir, I’m calling about a package in your name stuck at Mumbai hub."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Namaste, Neha ji. I didn’t order anything recently. What package is this?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, it’s a special Diwali gift delivery marked urgent. You need to clear a customs fee of ₹2500 on http://bluedart-securepay.com."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Diwali gift? From whom? I’m not expecting any surprises."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "The sender details are confidential, sir. But if you don’t pay by today, the package will be returned tomorrow."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "That sounds suspicious. Can you tell me what’s inside the package?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "It’s a high-value item, sir, possibly electronics. Please visit the link I gave to confirm and pay."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not clicking on any link without proper details. Can I get a tracking ID or something?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Of course, sir. It’s BD-987654. But time is running out, you must act fast!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’ll check with BlueDart directly. What’s your contact number for follow-up?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, no need for that. Just call 1800-555-1234 if you have doubts, but pay online now to avoid losing the gift."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not comfortable with this. I’ll verify with BlueDart’s official number. Thank you."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, you’re risking a valuable Diwali surprise! Please reconsider!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’ll take that risk. Goodbye, Neha ji."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Subscription Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, sir, this is Priya from SBI Customer Support. Your SBI YONO subscription is about to expire. Please renew immediately at http://sbi-secure-renew.in for just ₹499 to avoid account suspension."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hello, Priya. I didn’t know there’s a subscription for YONO. I’ve been using it for free."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, this is a new mandatory update from SBI for security. If you don’t renew by today, your account access will be blocked."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "That sounds odd. I’ll check with my bank branch directly."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, there’s no time for that. This is urgent! Diwali is coming, and you won’t be able to make transactions if your account is blocked."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not comfortable with this link. Can you send an official email or something?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, we don’t send emails for such urgent matters. Just click the link or call our helpline at 1800-555-7890 to confirm your details."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not sharing anything over the phone. I’ll verify this with SBI’s official number."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, please don’t delay. If your account gets suspended, it’ll take weeks to reactivate. Think about your family’s needs during Diwali!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I appreciate the concern, but I’m not falling for this. I’m hanging up now."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Wait, sir! This is not a scam, I’m just trying to help!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Sorry, but I don’t trust this. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Identity Theft",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Namaste, madam. This is Priya from SBI customer care. There’s a suspicious transaction on your account."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Namaste, Priya. Suspicious transaction? I didn’t get any SMS or alert."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, it’s an unauthorized withdrawal of Rs. 25,000. We need to secure your account immediately."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "25,000? That’s shocking! But why no message from the bank?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "The system is updating, madam. Please visit http://secure.sbi-verify.com to block the transaction."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hmm, I usually get alerts. This link looks strange. Can’t I go to the branch?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, the branch will take days, and Diwali is coming. You might lose more money. Act now!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m not sure. Can you send an official email or something?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Email takes time, madam. Just share your account number and OTP to stop this fraud."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "OTP? No way! I know banks don’t ask for that. Is this a scam?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "No, madam! I’m trying to save your money. Please trust me!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m calling SBI directly to confirm. I don’t trust this."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, don’t delay! Your money is at risk!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m hanging up. I’ll report this call."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Wait, madam, you’ll regret this!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Impersonation",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, madam, this is Priya from SBI Customer Care. How are you today?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hello, I’m fine, thank you. What is this about?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, there’s a serious issue with your account. A fraudulent transaction of ₹50,000 was attempted just now."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "What? I didn’t make any such transaction!"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Don’t worry, madam, but we need to secure your account immediately. Please visit http://secure.sbi-verify.com to verify your details."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Wait, I’ve never heard of such a website. Is this official?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Yes, madam, it’s our secure portal. If you don’t act now, your account could be blocked by tonight."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "This sounds suspicious. Can I call the bank directly?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, there’s no time! Diwali is coming, fraudsters are active. Please trust me, just click the link."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m not comfortable with this. Can you give me a number to verify?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Of course, call 1800-555-1234, but do it after securing your account. Every minute counts!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I think I’ll visit the branch instead. I don’t trust online links."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, branch will take time, and your money is at risk right now. Please, just follow my instructions!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m sorry, but I’m hanging up to check with the bank myself."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "You’re making a big mistake, madam! Your account will be frozen!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Sports",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey, Shreya, how’s it going?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Hey, Vikram, all good yaar! Just chilling with some chai. What about you?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Same here, just winding down after work. Listen, you watching the IPL match tonight?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Of course, man! Mumbai Indians vs. Chennai Super Kings, right? I’m all set with snacks!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haha, nice! I’m rooting for MI, as always. Got my jersey on already."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Oh, come on! CSK’s gonna crush it. Dhoni’s in killer form this season."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "We’ll see about that! Wanna bet a plate of vada pav on it?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Deal! Loser buys at that stall near Marine Drive. Game on!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "You’re so done! Anyway, you coming over for Diwali next week?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Wouldn’t miss it! Your mom’s gulab jamun is the best. I’ll bring some lights for the decor."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Perfect! Let’s make it a big one this year. Alright, I’ll call you during the match."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Cool, let’s trash-talk live! Catch you later, Vikram."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haha, for sure. Bye, Shreya!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Recreation",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey, bro, what’s up? Long time no talk!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Arre, man, just chilling! How’ve you been, yaar?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "All good, just busy with work. Thinking of planning something for Diwali weekend. You free?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Diwali? Dude, I’m always free for festivities! What’s the plan?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Was thinking we hit up a beach in Goa. Small getaway, you know?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Goa, nice! Count me in. When are we leaving?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Probably Friday night. Take a bus or train from Mumbai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Sounds good. Let’s book soon, tickets sell out fast during Diwali."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "True that. I’ll check for bus tickets tonight. You got any hotel recs?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Yeah, I know a decent shack near Baga. I’ll send you the details."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Perfect. Also, we gotta try some local fish curry there, man."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "100%! And some feni to wash it down, haha."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haha, for sure. Alright, I’ll confirm the tickets and buzz you."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Cool, can’t wait for this break, bro!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Same here. Talk soon!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Social",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey bro, kya haal hai? Long time no chat!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Arre, bhai! All good here. Tu bata, sab theek?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haan, sab mast. Just thought of catching up. Diwali ke plans kya hai tere?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Abhi toh kuch fixed nahi, bas ghar pe family ke saath. Maybe some phuljhadi and mithai. Tu?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Mera bhi same, but thinking of a small get-together. Aa ja na, maza aayega."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Sounds good! Kab hai yeh plan?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Diwali ke ek din pehle. Evening mein, mere ghar pe. Chai aur samosa on me!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Arre, samosa sunte hi mooh mein pani aa gaya. I’m in!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haha, perfect. Aur bata, kaam kaise chal raha hai?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Bas, thoda hectic hai. Tu bol, Mumbai ka traffic survive kar raha hai?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Kya bole, bhai. Har din ek jung hai yahan. But manage ho jaata hai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Haha, true. Chalo, Diwali pe milte hai. Details bhej dena."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Pakka. Take care, bhai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Tu bhi, bye!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Family",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hey bhai, how are you doing?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Arre di, I’m good! Just had some chai with friends. What about you?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "All good here. Just winding down after work. Are you coming to Delhi for Rakhi this year?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Planning to, yaar. Got my leave approved. When are you tying the rakhi?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Great! Let’s do it on the day itself. I’ve got a nice gift for you."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Arey, no need for gifts, di. Just your blessings are enough."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Haha, you can’t escape the gift! Anyway, how’s Mumbai treating you?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "It’s the usual chaos, but I love it. Vada pav for lunch almost every day!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Haha, you and your street food obsession. Just don’t overdo it, okay?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Don’t worry, I’m fine. Hey, did you talk to Mummy about the Rakhi plans?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Not yet, I’ll call her after this. She’ll be thrilled you’re coming."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Cool, let me know if she’s making her famous kheer. I’m already drooling!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Haha, I’ll ask. Alright, I’ll catch up with you later, bhai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Sure, di. Take care and see you soon!"
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Lottery Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Namaste, madam! I’m calling from India Lucky Lottery. Congratulations, you’ve won ₹10 lakh in our Diwali Special Draw!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Namaste. But I never participated in any lottery. How did this happen?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, your mobile number was selected randomly through our system. It’s a gift for Diwali! You just need to verify your identity."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Verify? What do I need to do?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "It’s simple. Just share your Aadhaar number and pay a small processing fee of ₹5000 to claim the prize."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "₹5000? That sounds suspicious. Why should I pay to get a prize?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, it’s just a formality for tax purposes. You can check everything on our website: http://indialuckydraw.co.in. Hurry, the offer expires in 24 hours!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I don’t trust websites like this. Can you send me some official proof or letter?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, there’s no time for paperwork! If you don’t act now, someone else will claim your prize. Think of your family this Diwali!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I understand, but I’m not comfortable sharing personal details. I’ll check with someone first."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, don’t miss this golden chance! Call me back on 98765-43210 if you change your mind. But time is running out!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’ll think about it, but I’m not promising anything. Goodbye."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Please don’t delay, madam. This is a once-in-a-lifetime opportunity!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Okay, I’ve heard enough. Bye."
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Travel",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hey, guess what? I’m planning a trip to Jaipur next month!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Whoa, that’s awesome! Jaipur’s so vibrant. When are you going?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Around mid-November, just after Diwali. Thought it’d be a nice getaway."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Perfect timing! The weather’s great then. You going with family or friends?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Just me and my cousin, Neha. We’re super excited to explore the forts."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Hawa Mahal and Amber Fort are musts. Have you booked anything yet?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Not yet, just looking at train tickets on IRCTC. Any hotel recos?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Hmm, check out some heritage stays near the Pink City. They’re a bit pricey but worth it."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Good idea! I’ll search for some on MakeMyTrip. What about food there?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Oh, you’ve gotta try dal baati churma. It’s a Rajasthani classic!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Noted! I’m already dreaming of it with some hot chai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Haha, nothing beats that combo. Let me know if you need help with bookings."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Thanks, will do. I’ll send you pics when I’m there!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "male",
+                "message": "Can’t wait to see them. Safe travels, yaar!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Work Update",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hey, Neha! Just wanted to update you on the project we’re handling."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Hey, Priya! Good to hear from you. How’s it going?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "It’s going pretty smoothly. I finally finished the presentation for the Delhi client."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "That’s awesome! Did they like the initial draft?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Yeah, they did! They had a few tweaks, but nothing major. I’m sending it for final approval today."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Nice! You’re killing it. Btw, are you free for a quick chai break later?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Oh, I’d love that! Let’s meet at the usual stall near Andheri station around 4?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Perfect! I’ve been craving some cutting chai all day."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Haha, same! Also, just a heads-up, I might need your input on the next phase next week."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "No worries, I’ve got your back. Let’s discuss over chai today."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Thanks, yaar. You’re the best. See you at 4!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "See you, Priya. Take care till then!"
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Service Fraud",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, madam, good afternoon! I’m Priya from SBI customer care. There’s an urgent issue with your bank account."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Good afternoon. What issue? I haven’t noticed anything wrong."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, someone tried to withdraw ₹50,000 from your account just now. We’ve blocked it temporarily, but you need to secure it immediately."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Oh my God, that’s scary! How do I secure it?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Don’t worry, I’ll help you. Just visit our secure portal at http://secure.sbi-verify.com and update your details. It’s urgent!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Wait, why can’t I do this at the bank branch? I’m not sure about online links."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, branches are slow, and this is a critical situation. If you don’t act now, your money could be at risk before Diwali celebrations!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hmm, I don’t know… Can you send me an official SMS or email instead?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "We can’t send SMS due to system updates, madam. Trust me, this link is 100% safe. Just click and verify your Aadhaar and PIN."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m not comfortable sharing my PIN online. This feels suspicious."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, I’m trying to save your account! If you don’t do this, we can’t stop the fraud. Please, it’s for your safety."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’ll visit the bank tomorrow and sort this out. I’m not clicking any links."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, tomorrow might be too late! Your account could be empty by then!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m sorry, but I’ll handle this directly with SBI. Please don’t call again."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Madam, you’re making a big mistake! Think about your family!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m hanging up now. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Financial Fraud",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello Sir, this is Priya from SBI Customer Care. I’m calling about an urgent issue with your account."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hello, Priya. What’s the problem with my account?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, we’ve detected a fraudulent transaction of ₹75,000 from your account just an hour ago. We need to secure it immediately."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "What? I didn’t make any such transaction. How did this happen?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "It seems someone has accessed your details, maybe through a phishing link. Please confirm your identity by sharing your Aadhaar number."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I don’t think I should share my Aadhaar number over the phone. Isn’t that unsafe?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, this is a secure line. If you don’t act now, you might lose more money, especially during this Diwali season when frauds are high."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hmm, I’m still not sure. Can I visit the branch to sort this out?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, the branch will take time, and the money could be gone by then. Just visit our secure portal at http://sbi-accountverify.com and update your details."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "That website doesn’t sound right. Why isn’t it the official SBI site?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, this is a temporary emergency portal for fraud cases. Please trust me, I’m trying to save your money!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I don’t know, Priya. I think I’ll call SBI directly on their official number."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, don’t waste time! Call this number 1800-123-4567 for verification if you’re unsure, but hurry!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not comfortable with this. I’m hanging up and reporting this call."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, please don’t do this! Your money is at risk! Just follow the link!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "No, I’m done here. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Delivery Update",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey, Priya! Just got a call from the Amazon delivery guy. My parcel is out for delivery today!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Oh, nice, Rohan! What did you order? Something exciting?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Yeah, it’s a Bluetooth speaker. Been wanting one for ages to play music during Diwali parties."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "That’s awesome! Which brand? I could use one for my house too."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "It’s a JBL. Got it on a good discount during the sale."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Nice catch! Are you gonna test it out as soon as it arrives?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Of course! Wanna come over? We can play some old Bollywood tracks and have chai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Haha, sounds like a plan! I’m in. What time should I drop by?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Let’s say around 5 PM? I’ll text you once the delivery guy hands it over."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Perfect! I’ll bring some samosas from that shop near my place in Mumbai."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Deal! Can’t wait to munch on those. See you soon!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "See you, Rohan! Bye for now."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Tech Support Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, sir, this is Priya from Tech Support for Windows. I’m calling because we’ve detected a critical virus on your computer."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hello, Priya. A virus? My computer seems to be working fine. How do you know this?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, we have remote monitoring tools at Microsoft India. Your system is sending error reports to us. It’s very urgent."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hmm, I’ve never heard of this. What do I need to do?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, you need to act immediately before your data gets stolen. Please visit http://windows-secure.in and download our security tool."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Wait, that URL doesn’t sound right. Why isn’t it a Microsoft website?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, this is a secure portal for Indian users. If you don’t do this now, hackers can access your bank details, even your SBI account!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "My SBI account? That’s serious. But I’m not sure I trust this. How did you get my number?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, we have your details from the Windows registration. Please, this is not a joke. Think about your family’s safety—your Aadhaar data could be compromised!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Aadhaar? Now you’re scaring me. But I’ll check with my bank first before doing anything."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, there’s no time! Call our helpline at 1800-987-6543 right now to secure your system. Don’t risk everything!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I don’t know, Priya. This feels off. I’m not calling any number until I verify this."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, please don’t hang up! If you ignore this, you could lose all your savings. Act now!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m sorry, but I’m going to disconnect. I’ll look into this myself. Goodbye."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, wait! This is very urgent! Don’t regret this later!"
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Phishing",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Namaste, madam, this is Rohan from SBI Customer Care. There’s an urgent issue with your bank account."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Namaste, Rohan. What’s wrong with my account?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, we’ve detected unauthorized transactions on your account. Rs. 50,000 has been debited just now."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "What? I didn’t make any transaction! How is this possible?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Don’t worry, madam, but we need to act fast. Please verify your identity on our secure portal at http://secure.sbi-verify.com."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Hmm, I’ve never heard of verifying through a website. Can’t we do this over the phone?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, due to security protocols, we can only process this online. It’s urgent, or your entire balance could be at risk."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "This sounds a bit suspicious. Why would SBI send me to a website I’ve never seen before?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, this is a temporary link for emergency cases only. If you don’t act now, we won’t be able to help you recover the money."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m not sure about this. Can you give me a number to call back and confirm?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Of course, madam, note down 1800-555-1234. But please, don’t delay. Every minute counts!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "Okay, I’ll call this number and check. But I’m not clicking any link until I’m sure."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, please don’t take this lightly. Think about your family’s savings. Just visit the link quickly!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’m sorry, but I’ll verify first. Goodbye."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Madam, wait! You’re making a big mistake!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "female",
+                "message": "I’ll decide that after checking. Bye."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Investment Scams",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, this is Priya from CapitalSecure Investments. Congratulations, sir, you’ve been selected for a special Diwali investment scheme with guaranteed 200% returns!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hello, Priya. 200% returns sound too good to be true. Can you explain how this works?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Of course, sir! We invest in high-growth stocks tied to festive season trends. Just invest ₹50,000 today, and you’ll see ₹1.5 lakh by next month!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hmm, that’s a big promise. Are you registered with SEBI or RBI?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Absolutely, sir! We’re fully certified. You can check all details on our secure portal at http://capitalsecure-deal.com. Sign up now!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’d like to verify this first. Can you send me your registration certificate or some proof?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, there’s no time for that! This Diwali offer closes in 24 hours. If you miss it, you’ll regret it!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not comfortable rushing into this. I need proper documentation."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, think about your family! This money could help with big Diwali expenses. Just share your Aadhaar details for quick registration."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not sharing personal details over the phone. This sounds suspicious."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, don’t miss this golden chance! Call me back on 1800-555-1234 if you change your mind. Hurry!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I don’t think so. Please don’t call me again. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Loan Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Namaste ji, this is Rohit from SBI Loan Services. We have a pre-approved loan of ₹5 lakh for you!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Namaste, but I never applied for any loan with SBI. How did you get my number?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Sir, your name came up in our database as a valued customer. Just verify your details at http://sbi-loansecure.com to claim this urgent offer!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "That sounds strange. I don’t remember sharing my details for any loan. Can you tell me more?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Of course, sir! It’s a special Diwali offer, low interest, only for selected customers. But you must act fast, offer ends in 24 hours!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hmm, I’m not sure. What details do you need? I don’t want to share anything sensitive."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Just your Aadhaar number and bank account details for quick processing. It’s 100% safe on our secure portal!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Aadhaar number? That doesn’t sound right. I think this might be a scam."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Sir, no scam! I’m calling from SBI head office. You can trust us. Call our helpline 1800-555-1234 to confirm!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’ll check with my bank directly. I’m not sharing anything over the phone."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Sir, don’t miss this chance! Your family could use this money for Diwali celebrations!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I appreciate the concern, but I’m not interested. Please don’t call again."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "male",
+                "message": "Just one minute, sir! Think about it, ₹5 lakh instantly!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "No, thank you. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Service Inquiry",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey Riya, how’s it going? Been a while!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Hey Vikram, I’m good! Just busy with Diwali prep. How are you?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Doing great, just wanted to ask about that new internet provider you switched to in Pune."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Oh, yeah! I got AirNet last month. It’s been pretty smooth so far."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Really? I’m fed up with my current one. How’s the speed?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Quite fast, honestly. I’m getting around 100 Mbps for streaming and work."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "That’s impressive. What about customer support? Any issues?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "They’re decent. Had a small glitch once, but they fixed it in a day."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Good to hear. How much are you paying monthly?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Around ₹900 with taxes. They had a Diwali discount when I signed up."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Not bad! I’ll check their website. Thanks for the info, Riya."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "No worries, Vikram. Let me know if you need the referral code for extra discount."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Oh, that’d be awesome. Send it over on WhatsApp?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Sure, I’ll do it right after this call. By the way, you coming to Mumbai for Diwali?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Planning to. Let’s catch up over some chai if I’m there!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Definitely! Looking forward to it. Talk soon!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Take care, bye!"
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Education",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey, Riya, how’s it going?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Hey, Vikram! All good, just winding down after a long day. You?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Same here. Just finished helping my cousin with his Class 10 board prep. Man, those NCERT books are no joke!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Haha, tell me about it! I remember those days. Maths was a nightmare. How’s he doing though?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "He’s okay, just stressed about Science. I told him to chill, boards aren’t the end of the world."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "True that. Hey, are you guys doing anything for Diwali? Maybe we can plan something together?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Yeah, we’re hosting a small get-together at home in Pune. You should come! Mom’s making her famous gulab jamuns."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Oh, I’m sold already! Count me in. I’ll bring some sparklers for the kids."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Perfect! It’ll be nice to catch up properly. Been ages since we met."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Totally. I’ll check my schedule and confirm the dates. Can’t wait!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Cool, let me know. Also, bring your appetite—there’s gonna be a lot of food!"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Haha, don’t worry, I’m always ready for that! Talk soon, Vikram."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Yeah, take care, Riya!"
+            }
+        ]
+    },
+    {
+        "type": "fraud",
+        "category": "Job Offer Scam",
+        "transcript": [
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Hello, sir! Congratulations! You’ve been shortlisted for a manager position at Reliance Industries. I’m calling from HR."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hello, that sounds great, but I don’t remember applying for Reliance. How did this happen?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, we found your profile on Naukri.com. This is a golden opportunity, especially before Diwali! We just need a small registration fee of ₹5000 to process your joining."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Registration fee? I’ve never heard of Reliance asking for money upfront. Can you confirm this?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Absolutely, sir! This is for training and verification. Please visit http://reliance-careers.co.in to complete the payment. It’s urgent, offer closes today!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hmm, that website doesn’t look official. Shouldn’t it be reliance.com or something?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, this is our secure portal for new hires. Don’t miss this chance! Jobs like these don’t come every day."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not comfortable paying without an offer letter. Can you email me the details first?"
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, the letter will be released only after payment. It’s company policy. Please trust us, think of your family this festive season!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m sorry, but this feels suspicious. I’ll check with Reliance directly. Please don’t call again."
+            },
+            {
+                "speaker": "scammer",
+                "gender": "female",
+                "message": "Sir, you’re making a big mistake! This is a limited-time offer. Pay now or lose it forever!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "I’m not paying anything. Goodbye."
+            }
+        ]
+    },
+    {
+        "type": "normal",
+        "category": "Entertainment",
+        "transcript": [
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Hey, Priya, kya chal raha hai?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Arre, Rohit, bas ghar pe hoon. Just finished some Diwali cleaning. You?"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Nice! Main toh bas office se aaya. By the way, did you see the new Bollywood movie trailer?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Haan, that one with Ranveer Singh, right? Looks so masala!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Exactly! I’m thinking we should catch it this weekend. Kya bolti hai?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Sounds good! But only if we grab some vada pav after. I’m craving it."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Deal! Mumbai ki streets pe best vada pav hi milta hai."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Haha, true that. Let’s book tickets online na, before they’re sold out."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Good idea. I’ll check the timings on BookMyShow. Evening show okay?"
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Perfect. And hey, bring your brother along if he’s free."
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Arre, woh toh busy hai. But I’ll ask. Chal, I’ll call you once tickets are booked."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Cool. Can’t wait for the movie and snacks!"
+            },
+            {
+                "speaker": "person 1",
+                "gender": "male",
+                "message": "Haha, same here. Talk soon, Priya."
+            },
+            {
+                "speaker": "person 2",
+                "gender": "female",
+                "message": "Bye, Rohit!"
+            }
+        ]
+    }
+]
