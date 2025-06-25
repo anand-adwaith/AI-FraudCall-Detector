@@ -9,6 +9,11 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 import json
+from transformers import pipeline
+import logging
+
+# Configure logging
+logger = logging.getLogger("rag-service")
 # find .env in project root
 env_path = Path(__file__).parent.parent / ".env"
 load_dotenv(env_path)
@@ -19,8 +24,7 @@ from langchain.tools.convert_to_openai import format_tool_to_openai_function
 
 from app.config import (
     QDRANT_URL,
-    CALL_QDRANT_COLLECTION_NAME,
-    TEXT_QDRANT_COLLECTION_NAME,
+    QDRANT_COLLECTION_NAME,
     HF_MODEL_NAME,
     HF_MODEL_KWARGS,
     AZURE_OPENAI_API_KEY,
@@ -293,10 +297,7 @@ Be precise and helpful.
 # Retrieval Setup
 # --------------------------
 def get_retriever(top_k: int = 5, mode: str = "call"):
-    if mode == "call":
-        collection_name = CALL_QDRANT_COLLECTION_NAME
-    elif mode == "text":
-        collection_name = TEXT_QDRANT_COLLECTION_NAME
+    collection_name = QDRANT_COLLECTION_NAME
     embeddings = HuggingFaceEmbeddings(
         model_name=HF_MODEL_NAME,
         model_kwargs=HF_MODEL_KWARGS,
@@ -338,18 +339,55 @@ def initialize_rag_components(top_k=5, mode: str = "call"):
 # --------------------------
 # RAG Runner with Function Calling
 # --------------------------
-def run_rag_query(query: str, retriever, llm, mode="call"):
+def run_rag_query(query: str, retriever, llm, mode="call", model_type="GPT"):
     # Choose the appropriate system prompt based on mode
     if mode == "call":
         system_prompt = SYSTEM_PROMPT_CALL_RAG
+        schema = classify_scam_call_schema
     else:
         system_prompt = SYSTEM_PROMPT_TEXT_RAG
+        schema = classify_scam_text_schema
         
-    system_template = SystemMessagePromptTemplate.from_template(system_prompt)
-    human_template = HumanMessagePromptTemplate.from_template(
-        "User query: {query}\n\nRetrieved documents:\n{context}"
-    )
-    chat_prompt = ChatPromptTemplate.from_messages([system_template, human_template])
+    # Prepare retrieved documents
+    docs = retriever.get_relevant_documents(query)
+    context = "\n\n".join([f"Document {i+1}:\n{doc.page_content}" for i, doc in enumerate(docs)])
+    
+    # Create a result list with retriever output
+    results = []
+    for i, doc in enumerate(docs):
+        results.append({
+            "content": doc.page_content,
+            "metadata": doc.metadata,
+            "score": getattr(doc, "score", None)
+        })
+      # Handle different model types
+    if model_type.lower() == "gemma":
+        # Use Gemma model for response generation
+        full_prompt = f"{system_prompt}\n\nUser query: {query}\n\nRetrieved documents:\n{context}"
+        parsed = generate_with_gemma(full_prompt, schema)
+        
+        # Return the same structure as GPT version
+        return {
+            "results": results,
+            "answer": parsed
+        }
+    elif model_type.lower() == "llama":
+        # Use Llama model for response generation
+        full_prompt = f"{system_prompt}\n\nUser query: {query}\n\nRetrieved documents:\n{context}"
+        parsed = generate_with_llama(full_prompt, schema)
+        
+        # Return the same structure as GPT version
+        return {
+            "results": results,
+            "answer": parsed
+        }
+    else:
+        # Default GPT approach
+        system_template = SystemMessagePromptTemplate.from_template(system_prompt)
+        human_template = HumanMessagePromptTemplate.from_template(
+            "User query: {query}\n\nRetrieved documents:\n{context}"
+        )
+        chat_prompt = ChatPromptTemplate.from_messages([system_template, human_template])
 
     # Step 1: Retrieve context
     docs = retriever.get_relevant_documents(query)
@@ -361,7 +399,7 @@ def run_rag_query(query: str, retriever, llm, mode="call"):
     "query": query,
     "context": context_text
     })
-    print("RAW LLM OUTPUT:", raw_output)
+    #print("RAW LLM OUTPUT:", raw_output)
     function_call = raw_output.additional_kwargs.get("function_call", {})
     arguments_str = function_call.get("arguments", "{}")
     parsed = json.loads(arguments_str)
@@ -378,7 +416,7 @@ def run_rag_query(query: str, retriever, llm, mode="call"):
 # --------------------------
 # Few-Shot Learning Implementation
 # --------------------------
-def run_few_shot_query(query: str, llm, mode="call", csv_path=None):
+def run_few_shot_query(query: str, llm, mode="call", csv_path=None, model_type="GPT"):
     """
     Run the scam detection using few-shot prompting instead of RAG.
     
@@ -387,6 +425,7 @@ def run_few_shot_query(query: str, llm, mode="call", csv_path=None):
         llm: The language model to use
         mode: Either "call" or "text" to determine the prompt and schema to use
         csv_path: Optional path to the dataset file (defaults to an appropriate path based on mode)
+        model_type: Model to use for inference - "GPT" or "gemma"
     
     Returns:
         Dict with classification results
@@ -394,30 +433,57 @@ def run_few_shot_query(query: str, llm, mode="call", csv_path=None):
     # Choose the appropriate system prompt based on mode
     if mode == "call":
         system_prompt = SYSTEM_PROMPT_CALL_FEW_SHOT
+        schema = classify_scam_call_schema
     else:
         system_prompt = SYSTEM_PROMPT_TEXT_FEW_SHOT
-    
-    system_template = SystemMessagePromptTemplate.from_template(system_prompt)
-    human_template = HumanMessagePromptTemplate.from_template(
-        "Please analyze this transcript: {query}"
-    )
-    chat_prompt = ChatPromptTemplate.from_messages([system_template, human_template])
-    
-    raw_output = (chat_prompt | llm).invoke({
-        "query": query
-    })
-    
-    print("RAW LLM OUTPUT:", raw_output)
-    function_call = raw_output.additional_kwargs.get("function_call", {})
-    arguments_str = function_call.get("arguments", "{}")
-    parsed = json.loads(arguments_str)
-    
-    # Return results without RAG context
-    return {
-        "results": [],  # No retrieval results in few-shot mode
-        "answer": parsed,
-    }
+        schema = classify_scam_text_schema
+      # Handle different model types
+    if model_type.lower() == "gemma":
+        # Use Gemma model for response generation
+        full_prompt = f"{system_prompt}\n\nPlease analyze this transcript: {query}"
+        logger.info(f"Full Prompt generated for Gemma: {full_prompt[:100]}...")  # Log just the beginning to avoid excessive logs
+        parsed = generate_with_gemma(full_prompt, schema)
+        
+        # Return the same structure as GPT version
+        return {
+            "results": [],  # No retrieval results in few-shot mode
+            "answer": parsed
+        }
+    elif model_type.lower() == "llama":
+        # Use Llama model for response generation
+        full_prompt = f"{system_prompt}\n\nPlease analyze this transcript: {query}"
+        logger.info(f"Full Prompt generated for Llama: {full_prompt[:100]}...")  # Log just the beginning to avoid excessive logs
+        parsed = generate_with_llama(full_prompt, schema)
+        
+        # Return the same structure as GPT version
+        return {
+            "results": [],  # No retrieval results in few-shot mode
+            "answer": parsed
+        }
+    else:
+        # Default GPT approach
+        system_template = SystemMessagePromptTemplate.from_template(system_prompt)
+        human_template = HumanMessagePromptTemplate.from_template(
+            "Please analyze this transcript: {query}"
+        )
+        chat_prompt = ChatPromptTemplate.from_messages([system_template, human_template])
+        
+        raw_output = (chat_prompt | llm).invoke({
+            "query": query
+        })
+        
+        #print("RAW LLM OUTPUT:", raw_output)
+        function_call = raw_output.additional_kwargs.get("function_call", {})
+        arguments_str = function_call.get("arguments", "{}")
+        parsed = json.loads(arguments_str)
+        
+        # Return results without RAG context
+        return {
+            "results": [],  # No retrieval results in few-shot mode
+            "answer": parsed,
+        }
 
+# Get HuggingFace model
 def get_llm_for_few_shot(mode="call"):
     """Get LLM configured with the appropriate function schema for few-shot learning"""
     if mode == "call":
@@ -434,18 +500,460 @@ def get_llm_for_few_shot(mode="call"):
         functions=[schema]
     )
 
+# Function to generate structured responses with Gemma
+def generate_with_gemma(prompt: str, schema: dict = None, max_tokens: int = 1024):
+    """
+    Generate a structured response using the Gemma model
+    
+    Args:
+        prompt: The prompt to send to the model
+        schema: The schema for structuring the response
+        max_tokens: Maximum number of tokens to generate
+        
+    Returns:
+        Dictionary containing the structured response
+    """
+    import json
+    import torch
+    import re
+    from app.utils import ModelManager
+    
+    try:
+        # Get Gemma model and tokenizer
+        model, tokenizer = ModelManager.get_gemma_model_and_tokenizer()
+        logger.info("Retrieved Gemma model and tokenizer successfully")
+        
+        # Format the prompt to include schema instructions if provided
+        if schema:
+            # Extract expected output format from schema
+            output_format = {
+                key: schema["parameters"]["properties"][key]["description"]
+                for key in schema["parameters"]["required"]
+            }
+            
+            # Add optional properties if available
+            if "follow_up_questions" in schema["parameters"]["properties"]:
+                output_format["follow_up_questions"] = schema["parameters"]["properties"]["follow_up_questions"]["description"]
+              # Build JSON format instruction with explicit examples to avoid confusion
+            json_format_instruction = """Your response MUST be in valid JSON format with these fields:
+            ```json
+            {
+              "classification": "Scam", 
+              "confidence": 0.95,
+              "reasoning": "Detailed explanation of why this is classified as a scam."
+            }
+            ```
+            
+            For suspicious cases, also include follow-up questions:
+            ```json
+            {
+              "classification": "Suspicious",
+              "confidence": 0.75,
+              "reasoning": "Explanation of why this is suspicious",
+              "follow_up_questions": [
+                "Question 1?",
+                "Question 2?",
+                "Question 3?"
+              ]
+            }
+            ```"""
+            
+            # Create messages in the format suitable for apply_chat_template
+            messages = [
+                [
+                    {
+                        "role": "system",
+                        "content": [{"type": "text", "text": json_format_instruction}]
+                    },
+                    {
+                        "role": "user",
+                        "content": [{"type": "text", "text": prompt}]
+                    },
+                ]
+            ]
+            
+            # Apply chat template
+            inputs = tokenizer.apply_chat_template(
+                messages,
+                add_generation_prompt=True,
+                tokenize=True,
+                return_dict=True,
+                return_tensors="pt"
+            ).to(model.device)
+        else:
+            # When no schema is provided, use a simpler message structure
+            messages = [
+                [
+                    {
+                        "role": "user",
+                        "content": [{"type": "text", "text": prompt}]
+                    },
+                ]
+            ]
+            
+            # Apply chat template
+            inputs = tokenizer.apply_chat_template(
+                messages,
+                add_generation_prompt=True,
+                tokenize=True,
+                return_dict=True,
+                return_tensors="pt"
+            ).to(model.device)
+            
+        logger.info("loaded inputs for Gemma model successfully")
+        
+        with torch.inference_mode():
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=max_tokens,
+                temperature=0.3,  # Match GPT temperature
+                top_p=0.95,
+                repetition_penalty=1.2
+            )
+            
+        logger.info("Decoding Gemma model outputs...")
+        full_response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+          # Print sample for debugging
+        #logger.info(f"Gemma response (first 200 chars): {full_response[:200]}")
+        #logger.debug(f"Full raw response: {full_response}")
 
-# if __name__ == "__main__":
-#     query = "Sir, I’m calling from your bank. Please read out the OTP to verify your account."
-#     top_k = 5
-#     result = run_rag_pipeline(query, top_k)
-#     print("\n=== Running Scam Classification ===")
-#     response = run_rag_pipeline(query=query, top_k=top_k)
-#     print("\n--- Retrieved Context Chunks ---")
-#     for i, doc in enumerate(response["results"], 1):
-#         print(f"\n[Doc {i}]")
-#         print(f"Score: {doc['score']}")
-#         print(f"Text: {doc['content']}")
-#         print(f"Metadata: {doc['metadata']}")
-#     print("\n--- Function Call Result ---")
-#     print(response["answer"])
+        # Try to extract JSON using the specialized function
+        parsed = extract_json_from_gemma_response(full_response)
+        if parsed:
+            logger.info("Successfully extracted JSON using specialized function")
+            return parsed
+        
+        # If specialized extraction fails, fallback to manual parsing (less preferred)
+        logger.warning("Specialized JSON extraction failed, falling back to manual parsing")
+          # Use the specialized JSON extraction function
+        parsed_json = extract_json_from_gemma_response(full_response)
+        
+        if parsed_json:
+            logger.info("Successfully extracted JSON using specialized extractor")
+            
+            # Fix confidence type if it's a string
+            if "confidence" in parsed_json and isinstance(parsed_json["confidence"], str):
+                try:
+                    parsed_json["confidence"] = float(parsed_json["confidence"])
+                except ValueError:
+                    parsed_json["confidence"] = 0.5  # Default fallback
+            
+            # Ensure follow_up_questions is a list if present
+            if "follow_up_questions" in parsed_json and not isinstance(parsed_json["follow_up_questions"], list):
+                if isinstance(parsed_json["follow_up_questions"], str):
+                    # If it's the schema description, create default questions
+                    if parsed_json["follow_up_questions"] == "Follow-up questions if Suspicious":
+                        parsed_json["follow_up_questions"] = [
+                            "What is the purpose of sharing the OTP?", 
+                            "Can you verify your identity and organization?", 
+                            "Is there an official channel I should use instead?"
+                        ]
+                    else:
+                        # Convert single question to list
+                        parsed_json["follow_up_questions"] = [parsed_json["follow_up_questions"]]
+            
+            # Verify required fields if schema provided
+            if schema:
+                required_keys = schema["parameters"]["required"]
+                if all(key in parsed_json for key in required_keys):
+                    return parsed_json
+          # If code block extraction fails, look for JSON objects with curly braces
+        try:
+            json_pattern = re.compile(r'\{[^\}]*(?:\{[^\}]*\})[^\}]*\}|\{[^\}]*\}')
+            matches = json_pattern.findall(full_response)
+            if matches:
+                # Try each match, starting with the longest (most complete) one
+                matches.sort(key=len, reverse=True)
+                for match in matches:
+                    try:
+                        parsed_json = json.loads(match)
+                        
+                        # Fix data types to match schema requirements
+                        if "confidence" in parsed_json and isinstance(parsed_json["confidence"], str):
+                            try:
+                                parsed_json["confidence"] = float(parsed_json["confidence"])
+                            except ValueError:
+                                parsed_json["confidence"] = 0.5
+                        
+                        # Ensure follow_up_questions is a list if present
+                        if "follow_up_questions" in parsed_json and not isinstance(parsed_json["follow_up_questions"], list):
+                            if isinstance(parsed_json["follow_up_questions"], str):
+                                # If it's just a string description, create a default list
+                                if parsed_json["follow_up_questions"] == "Follow-up questions if Suspicious":
+                                    parsed_json["follow_up_questions"] = [
+                                        "What is the purpose of sharing the OTP?", 
+                                        "Can you verify your identity and organization?", 
+                                        "Is there an official channel I should use instead?"
+                                    ]
+                                else:
+                                    # Convert single question to list
+                                    parsed_json["follow_up_questions"] = [parsed_json["follow_up_questions"]]
+                        
+                        # Verify required fields if schema provided
+                        if schema:
+                            required_keys = schema["parameters"]["required"]
+                            if all(key in parsed_json for key in required_keys):
+                                logger.info("Successfully extracted JSON from text with regex")
+                                return parsed_json
+                    except json.JSONDecodeError:
+                        continue
+        except Exception as regex_error:
+            logger.warning(f"Error in regex JSON extraction: {str(regex_error)}")
+        
+        # If JSON extraction fails, make a best-effort classification based on keywords
+        logger.warning("JSON extraction failed, falling back to keyword analysis")
+        response_text = full_response.lower()
+        
+        # Fallback parsing - extract classification
+        if "not scam" in response_text:
+            classification = "Not Scam"
+        elif "scam" in response_text:
+            classification = "Scam"
+        elif "suspicious" in response_text:
+            classification = "Suspicious"
+        else:
+            classification = "Unknown"
+            
+        # Try to extract confidence
+        confidence_match = re.search(r'"confidence":\s*(0\.\d+|1\.0)', response_text)
+        confidence = float(confidence_match.group(1)) if confidence_match else 0.5
+        
+        # Try to extract reasoning
+        reasoning_match = re.search(r'"reasoning":\s*"([^"]+)"', response_text)
+        reasoning = reasoning_match.group(1) if reasoning_match else f"Extracted from unstructured response. Response indicates potential {classification.lower()}."
+          # Build response with proper data types
+        result = {
+            "classification": classification,
+            "confidence": float(confidence),  # Ensure it's a float
+            "reasoning": reasoning
+        }
+        
+        # Add follow-up questions if applicable
+        if schema and "follow_up_questions" in schema["parameters"]["properties"] and classification == "Suspicious":
+            # Extract questions if possible
+            questions_match = re.search(r'"follow_up_questions":\s*\[(.*?)\]', full_response, re.DOTALL)
+            if questions_match:
+                try:
+                    questions_text = "[" + questions_match.group(1) + "]"
+                    questions = json.loads(questions_text.replace("'", '"'))
+                    result["follow_up_questions"] = questions
+                except Exception as e:
+                    logger.warning(f"Failed to parse follow-up questions JSON: {e}")
+                    # Fallback: extract quoted strings that end with question marks
+                    questions = re.findall(r'"([^"]+\?)"', full_response)
+                    if questions:
+                        result["follow_up_questions"] = questions[:3]  # Limit to 3 questions
+                    else:
+                        # Default questions if none found
+                        result["follow_up_questions"] = [
+                            "What is this OTP being used for specifically?", 
+                            "Can you provide official verification of your identity?", 
+                            "Is there an alternative way to verify this request?"
+                        ]
+            else:
+                # Default questions if pattern not found
+                result["follow_up_questions"] = [
+                    "What is this OTP being used for specifically?", 
+                    "Can you provide official verification of your identity?", 
+                    "Is there an alternative way to verify this request?"
+                ]
+        
+        return result
+        
+    except Exception as e:
+        # Return error details with more context
+        logger.error(f"Gemma model generation error: {str(e)}", exc_info=True)
+        
+        return {
+            "classification": "Error",
+            "confidence": 0.0,
+            "reasoning": f"Error using Gemma model: {str(e)}. Please check server logs for details."
+        }
+
+def extract_json_from_gemma_response(full_response: str):
+    """
+    Extract JSON from Gemma model response with specialized handling for common patterns.
+    
+    Args:
+        full_response: The full response from the Gemma model
+    
+    Returns:
+        Parsed JSON object or None if extraction fails
+    """
+    import json
+    import re
+    
+    # 1. Look for "model" keyword followed by JSON in code block - a common pattern
+    model_json_match = re.search(r'model\s*```(?:json)?\s*([\s\S]*?)```', full_response)
+    if model_json_match:
+        try:
+            json_str = model_json_match.group(1).strip()
+            parsed_json = json.loads(json_str)
+            return parsed_json
+        except json.JSONDecodeError:
+            pass
+    
+    # 2. Look for any JSON code blocks
+    json_blocks = re.findall(r'```(?:json)?\s*([\s\S]*?)```', full_response)
+    for block in json_blocks:
+        try:
+            parsed_json = json.loads(block.strip())
+            return parsed_json
+        except json.JSONDecodeError:
+            continue
+    
+    # 3. Look for JSON objects with curly braces
+    json_pattern = re.compile(r'\{[^\}]*(?:\{[^\}]*\})[^\}]*\}|\{[^\}]*\}')
+    matches = json_pattern.findall(full_response)
+    if matches:
+        # Try each match, starting with the longest (most complete) one
+        matches.sort(key=len, reverse=True)
+        for match in matches:
+            try:
+                parsed_json = json.loads(match)
+                return parsed_json
+            except json.JSONDecodeError:
+                continue
+    
+    return None
+
+# Function to generate structured responses with Llama
+def generate_with_llama(prompt: str, schema: dict = None, max_tokens: int = 256):
+    """
+    Generate a structured response using the Llama 3.2 model
+    
+    Args:
+        prompt: The prompt to send to the model
+        schema: The schema for structuring the response
+        max_tokens: Maximum number of tokens to generate
+        
+    Returns:
+        Dictionary containing the structured response
+    """
+    import json
+    import re
+    from app.utils import ModelManager
+    
+    try:
+        # Get Llama pipeline
+        pipe = ModelManager.get_llama_pipeline()
+        logger.info("Retrieved Llama pipeline successfully")
+        
+        # Format the input messages based on schema
+        if schema:
+            # Create a system message with instructions
+            system_content = "You are an AI Fraud/Scam Detector. "
+            system_content += "Your response MUST be in valid JSON format. "
+            
+            if "follow_up_questions" in schema["parameters"]["properties"]:
+                system_content += """
+                Format your response like this:
+                {
+                  "classification": "Scam", "Not Scam", or "Suspicious",
+                  "confidence": 0.95,
+                  "reasoning": "Your detailed reasoning",
+                  "follow_up_questions": ["Question 1?", "Question 2?", "Question 3?"]
+                }
+                """
+            else:
+                system_content += """
+                Format your response like this:
+                {
+                  "classification": "Scam", "Not Scam", or "Suspicious",
+                  "confidence": 0.95,
+                  "reasoning": "Your detailed reasoning"
+                }
+                """
+                
+            messages = [
+                {"role": "system", "content": system_content},
+                {"role": "user", "content": prompt}
+            ]
+        else:
+            messages = [{"role": "user", "content": prompt}]
+        
+        # Generate response
+        logger.info("Generating response with Llama model")
+        outputs = pipe(messages, max_new_tokens=max_tokens)
+        
+        # Extract the assistant's response
+        llama_response = outputs[0]["generated_text"][-1]
+          # Check the response format and extract content
+        if isinstance(llama_response, dict) and "content" in llama_response:
+            # Standard format from the model
+            response_text = llama_response.get("content", "")
+        else:
+            # If the model returns the text directly
+            logger.warning(f"Unexpected response format from Llama, trying to use response directly: {llama_response}")
+            response_text = str(llama_response)
+        logger.info(f"Llama response (first 100 chars): {response_text[:100]}")
+        
+        # Try to extract JSON from the response
+        try:
+            # Look for JSON pattern in the response
+            json_match = re.search(r'\{[\s\S]*\}', response_text)
+            if json_match:
+                json_str = json_match.group(0)
+                parsed_json = json.loads(json_str)
+                
+                # Ensure proper types
+                if "confidence" in parsed_json and isinstance(parsed_json["confidence"], str):
+                    try:
+                        parsed_json["confidence"] = float(parsed_json["confidence"])
+                    except ValueError:
+                        parsed_json["confidence"] = 0.5
+                
+                # Ensure follow_up_questions is a list if needed
+                if schema and "follow_up_questions" in schema["parameters"]["properties"]:
+                    if "follow_up_questions" not in parsed_json and parsed_json.get("classification") == "Suspicious":
+                        parsed_json["follow_up_questions"] = [
+                            "What is the purpose of the requested information?",
+                            "Can you verify your identity?",
+                            "Is there an official channel for this request?"
+                        ]
+                    elif "follow_up_questions" in parsed_json and not isinstance(parsed_json["follow_up_questions"], list):
+                        parsed_json["follow_up_questions"] = [parsed_json["follow_up_questions"]]
+                
+                logger.info("Successfully extracted JSON response from Llama")
+                return parsed_json
+            else:
+                logger.warning("No JSON found in Llama response")
+        except json.JSONDecodeError as e:
+            logger.warning(f"Failed to parse JSON from Llama response: {e}")
+        
+        # Fallback to keyword-based response
+        response_text_lower = response_text.lower()
+        if "not scam" in response_text_lower:
+            classification = "Not Scam"
+        elif "scam" in response_text_lower:
+            classification = "Scam"
+        elif "suspicious" in response_text_lower:
+            classification = "Suspicious"
+        else:
+            classification = "Unknown"
+        
+        result = {
+            "classification": classification,
+            "confidence": 0.5,  # Default confidence
+            "reasoning": f"Extracted from unstructured response: {response_text[:150]}..."
+        }
+        
+        # Add follow-up questions if applicable
+        if schema and "follow_up_questions" in schema["parameters"]["properties"] and classification == "Suspicious":
+            result["follow_up_questions"] = [
+                "What is the purpose of the requested information?",
+                "Can you verify your identity?",
+                "Is there an official channel for this request?"
+            ]
+        
+        return result
+    
+    except Exception as e:
+        # Provide detailed error information
+        logger.error(f"Llama model generation error: {str(e)}", exc_info=True)
+        
+        return {
+            "classification": "Error",
+            "confidence": 0.0,
+            "reasoning": f"Error using Llama model: {str(e)}. Please check server logs for details."
+        }

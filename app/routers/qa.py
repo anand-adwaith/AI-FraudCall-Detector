@@ -48,14 +48,28 @@ async def analyze_query(request: QueryRequest):
             message_type=request.message_type.value,
             mode=request.mode.value
         )
-        
-        # Choose the function to use based on mode
+          # Choose the function to use based on mode
         from app.services.rag_service import run_rag_query, run_few_shot_query
+          # Check if using Gemma model
+        if request.model_type.value.lower() == "gemma":
+            # No need to initialize Gemma here, just verify it was initialized at startup
+            if not ModelManager._gemma_initialized:
+                logger.error("Requested Gemma model but it was not initialized during startup")
+                raise HTTPException(status_code=500, detail="Gemma model is not available. Please check server logs.")
+            logger.info("Using pre-initialized Gemma model for inference")
+        
+        # Check if using Llama model
+        elif request.model_type.value.lower() == "llama":
+            # No need to initialize Llama here, just verify it was initialized at startup
+            if not ModelManager._llama_initialized:
+                logger.error("Requested Llama model but it was not initialized during startup")
+                raise HTTPException(status_code=500, detail="Llama model is not available. Please check server logs.")
+            logger.info("Using pre-initialized Llama model for inference")
         
         # Set timeout for the operation (60 seconds)
         if request.mode.value == "rag":
             # Use RAG mode
-            logger.info(f"Running {request.message_type.value} analysis in RAG mode")
+            logger.info(f"Running {request.message_type.value} analysis in RAG mode with {request.model_type.value} model")
             try:
                 response = await asyncio.wait_for(
                     asyncio.to_thread(
@@ -63,24 +77,26 @@ async def analyze_query(request: QueryRequest):
                         query=request.query,
                         retriever=retriever,
                         llm=llm,
-                        mode=request.message_type.value
+                        mode=request.message_type.value,
+                        model_type=request.model_type.value
                     ),
-                    timeout=60
+                    timeout=200
                 )
             except asyncio.TimeoutError:
                 raise HTTPException(status_code=504, detail="Analysis timed out after 60 seconds")
                 
         else:  # Few-shot mode
-            logger.info(f"Running {request.message_type.value} analysis in Few-Shot mode")
+            logger.info(f"Running {request.message_type.value} analysis in Few-Shot mode with {request.model_type.value} model")
             try:
                 response = await asyncio.wait_for(
                     asyncio.to_thread(
                         run_few_shot_query,
                         query=request.query,
                         llm=llm,
-                        mode=request.message_type.value
+                        mode=request.message_type.value,
+                        model_type=request.model_type.value
                     ),
-                    timeout=60
+                    timeout=200
                 )
             except asyncio.TimeoutError:
                 raise HTTPException(status_code=504, detail="Analysis timed out after 60 seconds")
@@ -172,34 +188,64 @@ async def classify_audio(request: AudioClassificationRequest):
             message_type=request.model_type.value,
             mode=request.analysis_type.value
         )
-        
-        # Step 4: Choose the function to use based on mode and run classification
+          # Step 4: Choose the function to use based on mode and run classification
         from app.services.rag_service import run_rag_query, run_few_shot_query
         
-        try:
+        try:            # Initialize Gemma model if requested
+            if request.llm_type.value.lower() == "gemma":
+                try:
+                    # Initialize Gemma model if not already done
+                    from app.utils import ModelManager
+                    ModelManager.initialize_gemma()
+                    logger.info("Using Gemma model for inference")
+                except Exception as e:
+                    logger.error(f"Failed to initialize Gemma model: {str(e)}")
+                    return AudioClassificationResponse(
+                        transcription=transcription,
+                        translation=translation,
+                        error=f"Failed to initialize Gemma model: {str(e)}"
+                    )
+            
+            # Initialize Llama model if requested
+            elif request.llm_type.value.lower() == "llama":
+                try:
+                    # Initialize Llama model if not already done
+                    from app.utils import ModelManager
+                    ModelManager.initialize_llama()
+                    logger.info("Using Llama model for inference")
+                except Exception as e:
+                    logger.error(f"Failed to initialize Llama model: {str(e)}")
+                    return AudioClassificationResponse(
+                        transcription=transcription,
+                        translation=translation,
+                        error=f"Failed to initialize Llama model: {str(e)}"
+                    )
+            
             # Set timeout for classification (30 seconds)
             if request.analysis_type.value == "rag":
                 # Use RAG mode
-                logger.info(f"Running {request.model_type.value} analysis in RAG mode")
+                logger.info(f"Running {request.model_type.value} analysis in RAG mode with {request.llm_type.value} model")
                 response = await asyncio.wait_for(
                     asyncio.to_thread(
                         run_rag_query,
                         query=translation,
                         retriever=retriever,
                         llm=llm,
-                        mode=request.model_type.value
+                        mode=request.model_type.value,
+                        model_type=request.llm_type.value
                     ),
                     timeout=30
                 )
             else:
                 # Use Few-shot mode
-                logger.info(f"Running {request.model_type.value} analysis in Few-Shot mode")
+                logger.info(f"Running {request.model_type.value} analysis in Few-Shot mode with {request.llm_type.value} model")
                 response = await asyncio.wait_for(
                     asyncio.to_thread(
                         run_few_shot_query,
                         query=translation,
                         llm=llm,
-                        mode=request.model_type.value
+                        mode=request.model_type.value,
+                        model_type=request.llm_type.value
                     ),
                     timeout=30
                 )

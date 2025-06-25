@@ -18,3 +18,5 @@ torch==2.7.1+cu126
 torchaudio==2.7.1+cu126
 transformers==4.52.4
 uvicorn==0.34.3
+bitsandbytes==0.42.0
+accelerate==0.30.1

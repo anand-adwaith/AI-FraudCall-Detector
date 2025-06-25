@@ -55,10 +55,27 @@ app.include_router(speech_router)
 async def startup_event():
     """Initialize models on startup"""
     logger.info("Starting up the server...")
-    # Initialize models in background for RAG
-    ModelManager.initialize()
+      # Initialize all models at startup
+    try:
+        # Initialize RAG models (llm, tokenizer, database)
+        logger.info("Initializing RAG components (LLM, retrievers)...")
+        ModelManager.initialize()
+        logger.info("RAG components initialization complete")
+        
+        # Initialize Gemma model and tokenizer
+        logger.info("Initializing Gemma model and tokenizer...")
+        ModelManager.initialize_gemma()
+        logger.info("Gemma model initialization complete")
+        
+        # Initialize Llama model pipeline
+        logger.info("Initializing Llama model pipeline...")
+        ModelManager.initialize_llama()
+        logger.info("Llama model initialization complete")
+    except Exception as e:
+        logger.error(f"Failed to initialize models: {str(e)}")
+        logger.error("API will still start, but model-dependent features may not work correctly")
     
-    # Initialize speech models
+    # Initialize speech models (keep existing implementation)
     try:
         # Import here to avoid circular imports
         from app.routers.speech import initialize_models

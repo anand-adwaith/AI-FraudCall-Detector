@@ -48,6 +48,15 @@ class ModelManager:
     _call_few_shot_llm = None 
     _text_few_shot_llm = None
     _initialized = False
+    
+    # Add Gemma model variables
+    _gemma_model = None
+    _gemma_tokenizer = None
+    _gemma_initialized = False
+    
+    # Add Llama model variables
+    _llama_pipeline = None
+    _llama_initialized = False
 
     def __new__(cls):
         if cls._instance is None:
@@ -97,3 +106,117 @@ class ModelManager:
                 return cls._text_retriever, cls._text_llm
             else:
                 return None, cls._text_few_shot_llm
+    
+    @classmethod
+    def initialize_gemma(cls, hf_token: str = "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"):
+        """
+        Initialize the Gemma model and tokenizer
+        
+        Args:
+            hf_token: Hugging Face token for model access
+        """
+        if cls._gemma_initialized:
+            logger.info("Gemma model already initialized")
+            return
+            
+        try:
+            logger.info("Initializing Gemma model and tokenizer...")
+            
+            # Import required libraries
+            from transformers import AutoTokenizer, BitsAndBytesConfig, Gemma3ForCausalLM
+            import torch
+            import os
+            
+            # Set environment variables for Hugging Face
+            os.environ["HF_READ_TOKEN"] = hf_token
+            os.environ["HF_ENDPOINT"] = "https://huggingface.co"
+            
+            # Model configuration
+            model_id = "google/gemma-3-1b-it"
+            quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+            
+            # Initialize model
+            cls._gemma_model = Gemma3ForCausalLM.from_pretrained(
+                model_id, 
+                quantization_config=quantization_config, 
+                token=hf_token, 
+                device_map="cuda"
+            ).eval()
+            
+            # Initialize tokenizer
+            cls._gemma_tokenizer = AutoTokenizer.from_pretrained(
+                model_id,
+                token=hf_token,
+                device_map="cuda"
+            )
+            
+            cls._gemma_initialized = True
+            logger.info("Gemma model and tokenizer initialized successfully!")
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize Gemma model: {e}", exc_info=True)
+            raise
+    
+    @classmethod
+    def get_gemma_model_and_tokenizer(cls):
+        """
+        Get the Gemma model and tokenizer, initializing if necessary
+        
+        Returns:
+            Tuple of (model, tokenizer)
+        """
+        if not cls._gemma_initialized:
+            cls.initialize_gemma()
+        
+        return cls._gemma_model, cls._gemma_tokenizer
+    
+    @classmethod
+    def initialize_llama(cls, hf_token: str = "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"):
+        """
+        Initialize the Llama 3.2 model pipeline
+        
+        Args:
+            hf_token: Hugging Face token for model access
+        """
+        if cls._llama_initialized:
+            logger.info("Llama model already initialized")
+            return
+            
+        try:
+            logger.info("Initializing Llama 3.2 model pipeline...")
+            
+            # Import required libraries
+            from transformers import pipeline
+            import torch
+            
+            # Model configuration
+            model_id = "meta-llama/Llama-3.2-1B-Instruct"
+            
+            # Initialize pipeline
+            cls._llama_pipeline = pipeline(
+                "text-generation",
+                model=model_id,
+                torch_dtype=torch.bfloat16,
+                device_map="auto",
+                token=hf_token
+            )
+            
+            cls._llama_initialized = True
+            logger.info("Llama 3.2 model pipeline initialized successfully!")
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize Llama model: {e}", exc_info=True)
+            raise
+    
+    @classmethod
+    def get_llama_pipeline(cls):
+        """
+        Get the Llama pipeline, initializing if necessary
+        
+        Returns:
+            Llama pipeline
+        """
+        if not cls._llama_initialized:
+            cls.initialize_llama()
+        
+        return cls._llama_pipeline

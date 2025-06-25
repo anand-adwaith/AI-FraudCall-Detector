@@ -10,11 +10,17 @@ class MessageType(str, Enum):
     CALL = "call"
     TEXT = "text"
 
+class ModelType(str, Enum):
+    GPT = "GPT"
+    GEMMA = "gemma"
+    LLAMA = "llama"
+
 class QueryRequest(BaseModel):
     query: str = Field(..., description="The text message or call transcript to analyze")
     message_type: MessageType = Field(..., description="Whether the query is a call transcript or text message")
     mode: AnalysisMode = Field(default=AnalysisMode.RAG, description="Analysis mode: RAG or few_shot")
     top_k: Optional[int] = Field(default=5, description="Number of similar documents to retrieve in RAG mode")
+    model_type: ModelType = Field(default=ModelType.GPT, description="Model to use for inference: GPT or gemma")
 
 class DocumentResult(BaseModel):
     content: str
@@ -51,6 +57,7 @@ class AudioClassificationRequest(BaseModel):
     language_id: str = Field(default="hi", description="Language ID for transcription (e.g., 'hi' for Hindi)")
     model_type: MessageType = Field(default=MessageType.CALL, description="Model to use: call or text")
     analysis_type: AnalysisMode = Field(default=AnalysisMode.RAG, description="Analysis type: RAG or few_shot")
+    llm_type: ModelType = Field(default=ModelType.GPT, description="LLM to use for inference: GPT or gemma")
 
 class AudioClassificationResponse(BaseModel):
     transcription: Optional[str] = Field(None, description="The transcribed text from the audio file")

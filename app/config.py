@@ -1,12 +1,13 @@
 import os
 
 # Dataset path
-CSV_PATH = os.getenv("CSV_PATH", "dataset/merged_text_data.csv")
+CSV_PATH = os.getenv("CSV_PATH", "dataset/merged_call_text.csv")
 
 # Qdrant vector DB
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
-CALL_QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "scam_db_call")
-TEXT_QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "scam_db_text")
+QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "scam_db")
+# CALL_QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "scam_db_call")
+# TEXT_QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "scam_db_text")
 
 # HuggingFace embedding model
 HF_MODEL_NAME = os.getenv("HF_MODEL_NAME", "BAAI/bge-large-en-v1.5")
