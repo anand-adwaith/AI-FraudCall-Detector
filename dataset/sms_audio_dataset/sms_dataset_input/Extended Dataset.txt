@@ -1,0 +1,100 @@
+fraud	Emotional Manipulation	Hi, I'm your long-lost cousin. I'm in urgent need of money for medical treatment. Please transfer Rs. 5,000 to this account.
+fraud	Fake Delivery Scam	Your package from India Post has been delayed due to incomplete address. Update your details here: http://track.indiapost-update.org/update
+fraud	Financial Fraud	Invest in our new scheme and get 20% returns in just 30 days. Limited spots available. Contact us now!
+fraud	Identity Theft	We need to verify your Aadhaar details for security purposes. Please provide your Aadhaar number here: http://verify.aadhaar-security.gov.in
+fraud	Impersonation	This is from the Income Tax Department. You have unpaid taxes. Pay immediately to avoid penalties: http://paytax.incometaxdepartment.org
+fraud	Investment Scams	Join our cryptocurrency trading group and double your money in a week. Guaranteed returns!
+fraud	Job Offer Scam	We are hiring for remote positions with high pay. No interview required. Apply now: http://apply.remotejobsnow.net
+fraud	Lottery Scam	Congratulations! You have won a prize of Rs. 10 lakhs in our lucky draw. Claim your prize here: http://claim.prizewin.lottery.com
+fraud	Loan Scam	Get instant loan approval up to Rs. 5 lakhs with low interest rates. Apply now: http://apply.instantloans.quickapproval.in
+fraud	Phishing	Dear customer, there was unusual activity on your SBI account. Please verify your details here: http://verify.sbi-account-security.com
+fraud	Service Fraud	Your electricity bill is overdue. Pay now to avoid disconnection: http://pay.bill.electricityboard.org
+fraud	Subscription Scam	Your Netflix subscription is about to expire. Renew now to continue watching: http://renew.netflix-subscription.tv
+fraud	Tech Support Scam	Your phone has been infected with a virus. Call our support team immediately at [fake number] to fix it.
+fraud	Lottery Scam	Congratulations! You’ve won a $1000 gift card from our lucky draw. Claim it now: [link]
+fraud	Financial Fraud	We noticed a transaction of $500 from your account that you didn’t authorize. Please confirm: [link]
+fraud	Fake Delivery Scam	Your package delivery was missed today. Reschedule here: [link]
+fraud	Phishing	Alert: Unusual activity detected on your Amazon account. Verify now: [link]
+fraud	Subscription Scam	Your Netflix subscription will be canceled unless you update your payment method: [link]
+fraud	Phishing	We need to verify your location for security purposes. Click here: [link]
+fraud	Lottery Scam	You've won a $500 Amazon gift card! Click here to claim: [link]
+fraud	Impersonation	This is the IRS. You have an outstanding tax issue. Pay now: [link]
+fraud	Financial Fraud	You have a refund of $200 from a recent transaction. Provide your bank details here: [link]
+fraud	Phishing	We need to verify your Bank of America account. Please enter your SSN and account number: [link]
+fraud	Fake Delivery Scam	Your Amazon package is ready for delivery. Pay $2.99 for shipping insurance: [link]
+fraud	Impersonation	Hi, this is [Boss’s Name]. I need you to buy $500 in gift cards for a client. Send me the codes ASAP.
+fraud	Subscription Scam	Your subscription to [Service] is expiring. Renew now for only $9.99: [link]
+fraud	Financial Fraud	You’ve been pre-approved for a 0% APR credit card. Apply now: [link]
+fraud	Phishing	We need to verify your Apple ID. Enter your password here: [link]
+fraud	Investment Scams	Claim your free Bitcoin now! Limited time offer: [link]
+fraud	Emotional Manipulation	Your son has been arrested. Send $1000 for bail: [link]
+fraud	Phishing	Your account has been suspended due to suspicious activity. Reactivate now: [link]
+fraud	Financial Fraud	Your new billing statement is available. View it here: [link]
+fraud	Phishing	This is your bank. There’s been suspicious activity on your account. Click here to secure it: [link]
+fraud	Phishing	Your 2FA code is 123456. If you didn’t request this, secure your account: [link]
+fraud	Fake Delivery Scam	USPS: Your package is pending delivery due to an unpaid shipping fee. Please update your information here to avoid return: [suspicious link]
+fraud	Emotional Manipulation	Hi Grandma, it’s your grandson. I got into a car accident and need money for the hospital, please send $500 to this CashApp: [CashApp ID]
+fraud	Lottery Scam	Congratulations! You’ve won a $100 Amazon gift card! Click here to claim your prize now: [phishing link]
+fraud	Financial Fraud	You’ve overpaid $50 for a recent transaction. Click here to process your refund: [fake payment link]
+fraud	Phishing	Hey everyone! Check out this amazing deal! [suspicious link]
+fraud	Subscription Scam	Your [streaming service] account payment failed. Please update your payment details here to continue watching: [fake streaming service login link]
+fraud	Impersonation	Hi, it’s [Boss’s Name], and I need you to purchase $500 in gift cards as soon as possible for a client and send me the codes. Let me know when done.
+fraud	Phishing	[Bank Name]: We’ve detected unusual login activity on your account. Verify it now: [phishing link]
+fraud	Financial Fraud	You’ve been pre-approved for a platinum credit card with 0% APR for 18 months! Apply now: [fake application link]
+fraud	Job Offer Scam	URGENT HIRING! Earn $500/day working from home. No experience needed. Apply here: [scam job application link]
+fraud	Phishing	Your [account name] verification code is: 123456. If you did not request this, secure your account here: [phishing link]
+fraud	Impersonation	IRS Notice: You have an outstanding tax issue. Immediate action is required to avoid penalties. Visit: [fake IRS website link]
+fraud	Subscription Scam	Your [streaming service] subscription will auto-renew for $99.99. Cancel now to avoid charges: [fake cancellation link]
+fraud	Financial Fraud	URGENT: This is a final notice regarding an outstanding debt. Failure to pay will result in legal action. Contact us immediately at: [fake phone number] or visit: [suspicious link]
+fraud	Phishing	This is [cell phone service provider], and we’re sending a special offer to our loyal customers. Click here for more details! [suspicious link]
+fraud	Phishing	This is [Bank Name]. For security reasons, please verify your account information: [phishing link]
+normal	Delivery Update	Your order from Flipkart has been shipped and will be delivered tomorrow.
+normal	Social	Hey, let's meet up this weekend for coffee. How about Saturday at 5 pm?
+normal	Service Inquiry	Hi, I'm having issues with my internet connection. Can you please check?
+normal	Service Inquiry	Your electricity bill of Rs. 1,200 is due on 20th June. Please pay by then to avoid disconnection.
+normal	Entertainment	The new Bollywood movie is releasing this Friday. Are you planning to watch it?
+normal	Work Update	The meeting has been rescheduled to 3 pm today. Please join on time.
+normal	Family	Mom, don't forget to take your medicines on time. Love you!
+normal	Sports	Did you see the IPL match last night? What a thrilling finish!
+normal	Recreation	Let's go for a trek this weekend. I know a great trail near Lonavala.
+normal	Education	The exam results will be out next week. Keep checking the college website.
+normal	Travel	I've booked flights for our trip to Goa next month. Let me know if you need anything.
+normal	Delivery Update	Your package has been delivered. Thank you for shopping with us!
+normal	Delivery Update	Your order is out for delivery and will arrive by 5 PM today.
+normal	Delivery Update	We have received your return request. The refund will be processed in 3-5 business days.
+normal	Social	Hey, are you coming to the party tonight?
+normal	Social	Let's meet at the cafe at 3 PM.
+normal	Social	I saw your post on Instagram, it's awesome!
+normal	Service Inquiry	What are your store hours on Sunday?
+normal	Service Inquiry	Do you offer student discounts?
+normal	Service Inquiry	Can I schedule an appointment for tomorrow?
+normal	Entertainment	Have you watched the latest episode of [TV show]?
+normal	Entertainment	Let's go to the cinema this Friday.
+normal	Entertainment	I just finished reading this amazing book, you should check it out.
+normal	Work Update	Please submit your reports by end of day.
+normal	Work Update	We have a new project starting next week.
+normal	Work Update	Don't forget the team lunch on Friday.
+normal	Work Update	The project deadline has been moved to next Friday.
+normal	Family	Mom, I'm running late, I'll be home by 7 PM.
+normal	Family	Can you pick up milk on your way home?
+normal	Family	Let's have dinner together this Sunday.
+normal	Family	Happy anniversary, love you!
+normal	Sports	Are you going to the game this weekend?
+normal	Sports	I just signed up for a marathon.
+normal	Sports	Let's play basketball after work.
+normal	Sports	Our team won the championship last night!
+normal	Recreation	I'm planning a trip to the beach next month.
+normal	Recreation	Have you tried the new yoga class at the gym?
+normal	Recreation	Let's have a picnic in the park this weekend.
+normal	Recreation	Let's go hiking in the mountains this Saturday.
+normal	Education	Don't forget to study for the test tomorrow.
+normal	Education	I got an A on my assignment!
+normal	Education	Let's form a study group for the upcoming exam.
+normal	Education	The exam is postponed to next week.
+normal	Travel	I'm arriving at the airport at 10 AM.
+normal	Travel	Let's book a hotel for our trip to Paris.
+normal	Travel	I need to renew my passport.
+normal	Travel	My flight is delayed by 2 hours.
+normal	Social	How was your day? Let's catch up soon.
+normal	Work Update	Remember to attend the webinar at 2 PM.
+normal	Family	Don't forget to call dad on his birthday.

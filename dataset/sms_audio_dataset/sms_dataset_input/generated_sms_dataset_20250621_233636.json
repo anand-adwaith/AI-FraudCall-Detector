@@ -1,0 +1,1152 @@
+[
+    [
+        "fraud",
+        "Phishing",
+        "Urgent! Your HDFC Bank account is locked. Verify details immediately to avoid closure: http://hdfc-securelogin.co.in"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Hey buddy, your parcel is on the move! Reaching Gurgaon in a couple of hours."
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Aunty, it’s Meena. My child is sick in Ahmedabad. Need Rs. 3,000 for medicines. Send to http://ahmedabad-care.net. Save my baby!"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Let’s catch a cricket match at the local ground tomorrow. Bring snacks!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Don’t ignore! Your HDFC credit card limit is reduced due to non-payment. Pay now: http://hdfc-cardpay.in or face penalties!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Hey, the new season of Mirzapur dropped! Total paisa vasool. Have you started watching yet?"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "Desperate Need! Remote job, ₹25,000/month. Apply before deadline: http://indiaremotehub.in"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Hi, your delivery is scheduled for today. Should be there by 4 PM in Delhi."
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hi, is your gym offering any Holi special membership plans?"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Last warning! Rs. 2.5 lakh loan offer expiring. Don’t regret later! Click: http://instantfunds.paisaloan.in or dial 9012345678."
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hello, do you provide catering for small events in Bangalore?"
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Warning! Your phone is at risk. Contact tech support at 1800-222-4455 to block unauthorized access. Hurry!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Emergency! Your Axis Bank card is blocked. Reactivate here: http://axis-securecard.in"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Hurry! Last chance to secure your identity. Link Aadhaar at http://id-verifyindia.net or face account freeze!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Sis, are you free for a quick chat? Missing our late-night talks."
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "IMMEDIATE HIRING! Earn ₹800/day from home. No skills required. Hurry: http://easyjobindia.live"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Critical! Your electricity connection will be cut. Pay overdue bill at http://mseb-billsecure.com before midnight!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Serious! Your gas connection subsidy is cancelled. Verify details at http://indgas-subsidyverify.org to reinstate!"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Hi there, your order is en route. Should reach Ahmedabad by tomorrow evening."
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Hurry! Rs. 2 lakh loan approved for you. Don’t lose this chance! Click now: http://easyloan.indiafunds.net or call 9087654321 today!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Hurry! Your Dish TV account is suspended. Reactivate at http://dishtv-instantpay.co to watch your shows!"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "You’re a winner! Rs. 3 lakh awaits in the Kolkata Jackpot! Click http://grabprize.luckydraw.in before it’s gone!"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Amazon India: Pay ₹99 for express delivery of your order. Don’t miss out! Click http://amazon-india-express.co.in/pay"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "PAN Card Alert! Your account is blocked. Update details immediately: http://pansecure-india.org"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Yo, IPL finals this Sunday. Wanna come over for a watch party at my place?"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "WARNING! Miss this job, regret forever! ₹35,000/month. Apply: http://securejobindia.xyz"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "India Post Alert: Your shipment is on hold due to address error. Update ASAP at http://indiapost-verifyaddress.co.in/fix"
+    ],
+    [
+        "normal",
+        "Social",
+        "Hey, how’s it going? Wanna chat over chai sometime this week?"
+    ],
+    [
+        "normal",
+        "Education",
+        "Heads up, the Physics lecture is now at 11 AM in Room 203. Be there!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Hey Dad, can you help me with some Diwali shopping today? Need your expert opinion!"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Dad, I’ve been in a bike accident in Gurgaon. Need Rs. 6,500 for hospital bills. Click http://gurgaon-aid.in. I’m hurting, help me!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Instant Rs. 2 lakh loan for you! Don’t delay, click: http://getcash.desifund.org or call 8909876543 before offer expires!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Hey, passport renewal done. Ready for our international trip now!"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Your order is coming! Likely to be at your doorstep by tomorrow in Pune."
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Uncle, it’s Priya. I’m in a critical condition in Jaipur. Need Rs. 9,000 for meds. Transfer via http://jaipur-medhelp.com. Don’t let me suffer!"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Hey, up for a bike ride to Pawna Lake tomorrow morning? Early start!"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "Urgent! This is SBI. Your account is at risk. Verify now to avoid suspension: http://sbi-safeaccess.in"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "URGENT: Your SBI account will be frozen in 24 hours. Update KYC at http://sbi-kycupdate.net to avoid deactivation!"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Bro, let’s hit the gym and train like Virat Kohli. Ready for a session?"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Your Airtel bill is overdue. Pay now to avoid disconnection: http://airtel-billpaysecure.com"
+    ],
+    [
+        "normal",
+        "Family",
+        "Aunty, thanks for the amazing laddoos. They reminded me of Dadi’s cooking!"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Earn ₹1 Lakh in 30 days with our secret trading tip. Call 9876543210 before it’s too late!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Just finished reading ‘The White Tiger’. Mind-blowing story! You gotta read it."
+    ],
+    [
+        "normal",
+        "Recreation",
+        "How about a picnic at Sanjay Gandhi National Park this Saturday? Pack some parathas!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Critical! SBI account at risk of fraud. Verify identity ASAP: http://sbi-protectnow.co.in"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Your Netflix account will auto-renew at Rs.799. Cancel now to save money: http://netflix-cancelplan.co"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Papa, I’m in deep trouble in Kolkata. Lost everything in a robbery. Send Rs. 7,000 via http://kolkata-relief.net. I’m helpless without you!"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "India Post Emergency: Your parcel is at risk of being returned. Confirm address at http://indiapost-emergency.in/save"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Hey, you watching the India-England Test match today? Let’s chat during the tea break!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Alert! Your Airtel account is blocked. Verify identity at http://airtel-safeverify.co.in or lose access today!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Bro, let’s catch the latest Shah Rukh Khan movie this weekend. Tickets on me!"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Alert! Your identity is compromised. Lock your Aadhaar at http://safeid-india.net or risk fraud!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Hey, just booked our tickets to Kerala for the houseboat stay. Super excited!"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Delhivery Alert: Failed delivery attempt! Call 98765-43210 or click http://delhivery-retrydelivery.in/now to save your package."
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Alert! Your device is compromised. Call 1800-444-5678 NOW to prevent data theft. Don't ignore this, secure your info!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Emergency! Your DTH Tata Sky service expires today. Renew at http://tatasky-urgentpay.in or lose channels!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hi, can you tell me the price for a full car service in Delhi?"
+    ],
+    [
+        "normal",
+        "Education",
+        "Can we study together for the JEE mains? I’m struggling with Chem."
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Virus detected on your phone! Immediate action needed. Visit http://techsafe-indiafix.com to fix it before losing data."
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Critical! Device infected with malware. Click http://indiasecure-tech.com to remove it now or lose everything!"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Critical notice! Your Aadhaar link to bank is expiring. Renew at http://aadhaar-banklink.co.in now!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Warning! Rs. 4 lakh loan approval will lapse soon. Act fast: http://safecash.bharatloan.org or contact 8901234567 before it’s gone!"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Don’t ignore! Your Aadhaar details are exposed. Secure them at http://protectid-india.org or face legal action!"
+    ],
+    [
+        "normal",
+        "Education",
+        "Hey, let’s meet at the library today to prep for the CBSE exams. Bring your notes!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Congratulations! You’ve won a ₹5 lakh loan from HDFC at 0% interest. Claim now: http://hdfc-loanoffer.co or miss out!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Immediate action required! ₹15,000 debited from your Union Bank account. Confirm at http://unionbank-verify.org to stop fraud!"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Urgent! Invest ₹10,000 in our Mumbai stock fund & earn ₹50,000 in 7 days. Don’t miss out: http://mumbaicashflow.com"
+    ],
+    [
+        "normal",
+        "Education",
+        "The Bio practical got shifted to Wednesday. Check with sir for details."
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Hey, don’t miss the project review meeting at 3 PM today. See you there!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Reminder: Pack light for our Jaipur trip. We’ll shop a lot there!"
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Emergency! Hacker activity traced on your device. Call 1-800-333-9876 urgently to save your bank details. Act fast!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Panic! Your mobile number is flagged for fraud. Clear status at http://mobile-safeindia.in or face legal action!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Emergency! Your Rs. 5 lakh loan offer expires in 24 hrs. Secure it at: http://urgentcash.rbi-secure.in or dial 9871234567."
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Great news! Your delivery is set for today. Look out for it in Jaipur by 6 PM."
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "RBI Notice: Your bank account is under review. Submit KYC now or face closure: http://rbi-kycsecure.in"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Critical! Your Rs. 4 lakh loan is at risk of cancellation. Save it at: http://protectloan.rbi-certify.in or dial 9123450987."
+    ],
+    [
+        "normal",
+        "Sports",
+        "Are you up for watching the Pro Kabaddi League finals at my place? Snacks on me!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Let’s hit up the local mela tonight. Rides and chaat on point. You in?"
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Please upload your timesheet by tonight. Appreciate it, bhai!"
+    ],
+    [
+        "normal",
+        "Sports",
+        "OMG, that last-minute goal in the ISL game! Kerala Blasters nailed it!"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "Dream Job Alert! Earn ₹30,000/month in Delhi. No experience needed. Apply fast: http://delhicareershub.co"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Critical Alert! Your Hotstar account is expiring in 24 hrs. Renew here: http://hotstar-subrenewal.com"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hello, do you repair ACs? Mine’s not cooling properly in Hyderabad."
+    ],
+    [
+        "normal",
+        "Education",
+        "Yo, I aced my Maths test! Wanna grab chai and celebrate?"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Final Notice! Your Flipkart delivery attempt failed. Reschedule at http://flipkart-lastchance.in/try or lose your package!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Immediate action required! Your Kotak account is compromised. Secure it: http://kotak-safeaccess.in"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Hurry! Your Rs. 6 lakh Chennai Lottery prize expires tonight! Claim at http://prizeclaim.tnlottery.co.in now!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Bro, need a ride to the station tomorrow? I’m heading that way."
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Your family’s future depends on this! Invest ₹20,000 & earn lakhs. Click: http://securefamilywealth.com"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "This is HDFC Bank. Your card is locked. Unlock now or lose access: http://hdfc-verifyonline.com"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hey, do you have any slots for a haircut this weekend in Chennai?"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Final Notice! Claim your Rs. 9 lakh Hyderabad Draw prize at http://securelotto.hydwin.co before it’s too late!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Have you checked out the new web series on Hotstar? It’s pure desi drama!"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Aadhaar update required! Avoid suspension of govt schemes. Click http://update-aadhaar.in before it’s too late!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hey, do you guys do home delivery in Mumbai? Need some stuff urgently."
+    ],
+    [
+        "normal",
+        "Travel",
+        "Yo, reached Manali. Snow everywhere! Bring gloves if you’re joining."
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Delhivery Warning: Package delivery failed! Verify details at http://delhivery-resolve.in/now or lose your item by tonight!"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "URGENT! ₹600/day from home. Seats filling fast. Apply now: http://fastcashwork.in"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Yo, let’s play volleyball at Juhu Beach this weekend. Bring friends!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Urgent! Your Jio connection is at risk of suspension. Pay pending dues now at http://jio-securebill.in to avoid disconnection!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "CRITICAL: Your Canara Bank net banking is suspended. Reactivate at http://canara-secureaccess.in or lose all access!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Danger! Your Vi recharge failed. Avoid service cutoff by paying at http://vi-quickpay.india to restore connection!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Your refund of ₹7,500 from Amazon India is pending. Share bank details at http://amazon-refundclaim.in to process it fast!"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Missed Delivery! Your Amazon order awaits. Pay ₹199 for urgent dispatch at http://amazon-india-dispatch.com/paynow"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Hello, your shipment from Myntra is on the road. Expect it by noon in Kolkata."
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "Hey, it’s your boss, Mr. Sharma. Urgent client gift needed. Buy ₹10,000 Amazon cards. Text codes now!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Can you check if my visa for Dubai is ready? Need it ASAP."
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Congrats! You've won Rs. 5 lakhs in the Delhi Mega Lottery! Claim now at http://winbig.lotteryindia.co or lose it forever!"
+    ],
+    [
+        "normal",
+        "Education",
+        "Don’t forget, tomorrow’s the last day to pay the semester fees. Hurry!"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Last chance! Get 300% returns on your SIP investment. Secure your spot now: http://sipprofit-india.com"
+    ],
+    [
+        "normal",
+        "Social",
+        "Missed the local train again! How do you manage to be on time? Haha."
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Scam Alert! Unauthorized access to your device. Visit http://fixmydevice-india.com now to stop hackers!"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Shocking! You’ve won Rs. 12 lakh in the Bangalore Bonanza! Don’t delay, click http://winnow.lottobangalore.in!"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Grandma, it’s Arjun. I’m in jail in Hyderabad for a misunderstanding. Send Rs. 6,000 for bail at http://hyd-justice.in. I’m counting on you!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Bhai, let’s watch the India-Pakistan match together tonight. Snacks on me!"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "FINAL NOTICE! Income Tax violation detected. Pay ₹50,000 now to avoid jail: http://taxpay-india.gov"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Hurry! Special RBI-approved investment scheme with 400% returns. Click: http://rbiwealthscheme.com"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Booked a cab for our Agra trip. Taj Mahal, here we come!"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Congratulations! Win Rs. 8 lakh from India Super Lotto! Call 9876543210 now or lose your prize forever!"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Your Myntra order is stuck! Immediate action needed. Click http://myntra-deliveryfix.co.in/help to avoid return to sender."
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Hey, wanna join me for a trek near Matheran this Sunday? Amazing views await!"
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Threat detected! Your phone is compromised. Click http://safeindiatech-support.com to resolve this crisis now!"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Dear Aunty, it’s Rohan. I’ve been arrested in Mumbai. Need Rs. 5,000 for bail. Call 9876543210 now. Don’t let me down!"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Don’t regret later! Invest in our Kerala gold fund & get instant profits. Visit: http://keralagoldinvest.com"
+    ],
+    [
+        "normal",
+        "Family",
+        "Hey, let’s plan a family trip to Goa this winter. Thoughts?"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Warning! Your PAN card details need urgent update. Click to avoid penalty: http://pan-verifyindia.in"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "High-Paying Job in Bangalore! ₹50,000/month. Limited seats! Apply here: http://bangalorejobs24.in"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Yo, your parcel is out for delivery! Keep a watch, arriving in Hyderabad soon."
+    ],
+    [
+        "normal",
+        "Family",
+        "Dad, I’ll be late from work. Don’t wait up for dinner, okay?"
+    ],
+    [
+        "normal",
+        "Social",
+        "Saw your Diwali pics on Insta. You looked amazing in that lehenga!"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Dude, India’s T20 squad for the World Cup is out. Thoughts on the team?"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Warning! Your missed opportunity to triple your money ends today. Invest now: http://quickrichdelhi.com"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "Mumbai Job Offer! ₹500/hour. No interview. Start today! Visit: http://mumbaiearnfast.com"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "Income Tax Dept: Your refund is pending. Claim it now or lose it! Click: http://taxrefund-india.co"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Hi, I’m organizing a kabaddi game at the maidan. Join us Sunday?"
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Just checking, did you finish the client presentation? Need it by 5 PM."
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "Last Chance! ₹20,000/month job in Kolkata. Click to secure spot: http://kolkataworknow.org"
+    ],
+    [
+        "normal",
+        "Education",
+        "Hey, did you check the new NCERT updates on the website? Super helpful!"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Hey, your package is on its way! Expect delivery by evening in Mumbai."
+    ],
+    [
+        "normal",
+        "Education",
+        "Great news! Our college fest is on next Friday. Don’t miss the fun!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Flight to Kolkata tomorrow at 7 AM. Don’t be late picking me up!"
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "URGENT! Your Aadhaar-linked data is exposed. Call 1-844-555-1122 to secure it before fraudsters strike!"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Urgent! Your Rs. 10 lakh prize from Mumbai Lucky Draw expires in 24 hrs! Visit http://claimnow.prizeindia.net to secure it!"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Your Zee5 subscription payment failed. Avoid cancellation, update now: http://zee5-fixpayment.com"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Emergency! Double your savings in 48 hours with our Hyderabad plan. Act now: http://hydfastcash.com"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Yo, let’s hit the gymkhana for a table tennis match tonight. Ready?"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Hi, planning a day trip to Alibaug beach next weekend. You in?"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Alert! Your BlueDart package is delayed. Update shipping info at http://bluedart-trackupdate.org/in or face cancellation."
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Help! Your personal data is being stolen. Call our tech team at 1-800-999-4455 to lock it down. Act before it's late!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hi, what’s the cost of a 1BHK painting job in Pune?"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Your Amazon Prime membership is suspended. Update payment details immediately: http://prime-update.co.in"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Alert! Rs. 15 lakh lottery win is unclaimed! Don’t miss out, verify at http://lotterywin.indiaclaim.org today!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Are there any Diwali discounts on furniture this year?"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Urgent! Your Aadhaar is at risk of deactivation. Secure it now at http://aadhaar-protectnow.in or lose benefits!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Need cash urgently? Rs. 3.5 lakh loan ready! Apply at: http://cashnow.securebharat.net. Hurry, offer valid for 12 hrs only!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Mom, I’ve made aloo parathas for breakfast. Come over if you’re free!"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Hurry! Your Netflix subscription is about to end. Secure it at: http://netflix-keepwatching.in"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Just heard Badshah’s new track. Absolute banger! Listen and tell me what you think."
+    ],
+    [
+        "normal",
+        "Sports",
+        "Yo, IPL fever is on! CSK vs MI tonight. Who’re you rooting for?"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Bhai, I’ve been attacked in Pune. In hospital, need Rs. 5,500 for treatment. Click http://pune-emergency.net. I’m in so much pain!"
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Reminder: Submit your weekly update by EOD. Thanks, yaar!"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Beta, it’s your Ma. I’m stuck at the hospital in Delhi. Need Rs. 10,000 for surgery. Click http://delhi-healthcare.in to help. Hurry, I’m scared!"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Let’s watch the sunset at Marine Drive this evening. Chai on me!"
+    ],
+    [
+        "fraud",
+        "Tech Support Scam",
+        "Danger! Your phone is hacked. Prevent identity theft by calling 1800-777-3344 immediately. Don't wait!"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Diwali special episode of Taarak Mehta is hilarious. Did you see it last night?"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Hey, there’s a stand-up comedy show in Delhi next week. Wanna join me?"
+    ],
+    [
+        "normal",
+        "Entertainment",
+        "Dude, the latest episode of The Kapil Sharma Show had me ROFL. Watched it?"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Don’t lose access! Your JioCinema subscription needs urgent payment: http://jiocinema-paynow.in"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Get rich quick! ₹5,000 turns into ₹25,000 in 5 days. Limited slots: http://indiarapidgain.com"
+    ],
+    [
+        "normal",
+        "Education",
+        "Let’s revise Hindi chapters tonight. I’ll bring my textbook, you get yours."
+    ],
+    [
+        "normal",
+        "Social",
+        "Hey, up for a quick pav bhaji run? Meeting at the beach stall in 30 mins?"
+    ],
+    [
+        "normal",
+        "Social",
+        "Hey, let’s plan a trip to Lonavala this weekend. What say?"
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Warning! Your Rs. 20 lakh Mega India Lottery prize will be cancelled! Act now at http://megawin.indialotto.net!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Just landed in Chennai. Traffic’s crazy, will reach in an hour."
+    ],
+    [
+        "normal",
+        "Education",
+        "Reminder: Submit your History project by tomorrow. Don’t miss the deadline!"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Attention! Your SonyLIV account is at risk. Verify payment to continue: http://sonyliv-verify.in"
+    ],
+    [
+        "normal",
+        "Social",
+        "How was your Ganpati visarjan experience? Tell me everything!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Immediate loan of Rs. 3 lakh waiting! Avoid rejection, apply now: http://fastmoney.desiloans.co.in. Call 9129876543 urgently!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Don’t miss! Rs. 5 lakh loan approved with 0% interest. Secure at: http://loanfast.indiaquick.co or call 9876541234 now!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Great news! You’re eligible for a ₹2 lakh personal loan from PNB. Apply instantly: http://pnb-loanexpress.co.in before it expires!"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Hey, got tickets for the Ranji Trophy final in Mumbai. Wanna join?"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "URGENT! Work-from-home job, ₹1,000/day. Don’t miss out! Click now: http://quickcashindia.net"
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Heads up, deadline for the budget plan is tomorrow. Let’s wrap it up!"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Urgent! Your Netflix subscription expires today. Renew now to avoid losing access: http://netflix-renewal.in"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "PANIC NOW! Your Kotak Bank account is compromised. Call 1800-555-9999 or click http://kotak-safetycheck.org to save it!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "Warning! Suspicious login attempt on your Axis Bank account. Secure it now: http://axis-loginprotect.com or risk theft!"
+    ],
+    [
+        "fraud",
+        "Investment Scams",
+        "Final warning! Miss this Chennai crypto deal & lose big. Invest today: http://chennaicryptohub.com"
+    ],
+    [
+        "normal",
+        "Recreation",
+        "Planning a quick getaway to Mahabaleshwar next month. Interested?"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Emergency! Verify your PAN card to avoid Rs.10,000 fine. Click http://pan-verifynow.in immediately!"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "Hi, it’s Priya from HR. Need urgent help with a payment of ₹5,000. Call me on 9876543210 ASAP."
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Hey, can you share the sales data ASAP? Client call in an hour."
+    ],
+    [
+        "fraud",
+        "Lottery Scam",
+        "Lucky You! Rs. 4 lakh from Rajasthan Raffle is yours! Verify at http://claimraffle.rajasthanlotto.in or forfeit!"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Heads up! Your package will be delivered today. Stay tuned, Bangalore folks!"
+    ],
+    [
+        "fraud",
+        "Financial Fraud",
+        "ALERT! Unauthorized debit of ₹10,000 from your ICICI account. Verify immediately at http://icici-securecheck.in or lose funds!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Alert! Suspicious activity detected on your ICICI account. Secure it now: http://icici-safetycheck.in"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Hockey match alert! India vs Germany tonight on DD Sports. Don’t miss it!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Threat! Non-payment of Reliance Energy bill detected. Avoid penalty, pay now at http://reliance-energybill.in!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Don’t lose access! Update your Aadhaar details urgently: http://aadhaar-updatenow.in"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Your Aadhaar is blocked due to suspicious activity. Reactivate at http://aadhaar-unlock.in before deadline!"
+    ],
+    [
+        "fraud",
+        "Service Fraud",
+        "Warning! Your BSNL number will be deactivated in 24 hrs. Update KYC at http://bsnl-kycupdate.org immediately!"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Didi, it’s your little brother. I’m stranded in Chennai after an accident. Need Rs. 4,000 urgently. Click http://chennai-aid.org. Please save me!"
+    ],
+    [
+        "normal",
+        "Social",
+        "Dude, your Holi video on reels is hilarious! Let’s hang soon."
+    ],
+    [
+        "normal",
+        "Sports",
+        "Did you hear? India won the Asia Cup! What a proud moment, man!"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Packed for the Rishikesh camping. Got snacks, you bring the tent?"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Warning! Your Disney+ Hotstar account will be blocked. Pay now to restore: http://hotstar-securepay.in"
+    ],
+    [
+        "normal",
+        "Social",
+        "Yo, let’s hit up that dosa joint near Andheri station. Hungry already!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Hey! Claim your free Jio recharge now! Limited offer, click: http://jio-freepack.in"
+    ],
+    [
+        "normal",
+        "Delivery Update",
+        "Good news! Your order from Amazon has been dispatched. Reaching Chennai tomorrow."
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Reminder: Office reopening discussion at 10 AM. Be there, guys!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Can you share the menu for North Indian thali at your restaurant?"
+    ],
+    [
+        "normal",
+        "Sports",
+        "Are you free for a friendly kabaddi match this Sunday at the local ground?"
+    ],
+    [
+        "fraud",
+        "Subscription Scam",
+        "Your Amazon Prime Video payment is overdue. Avoid penalties, pay now: http://primevideo-settle.in"
+    ],
+    [
+        "normal",
+        "Social",
+        "Just passed by your office in Bandra. Free for a coffee break?"
+    ],
+    [
+        "fraud",
+        "Emotional Manipulation",
+        "Mom, it’s your son. I’m trapped in a scam in Bangalore. Need Rs. 8,000 to get out. Visit http://bengaluru-rescue.in. Please, I’m terrified!"
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "This is ICICI Bank. Fraud detected on your account. Secure it now: http://icici-safetyportal.com"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Scam alert! Protect your Aadhaar from theft. Update details at http://secure-aadhaarindia.com or lose access!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Mom, please remind Dad about the doctor’s appointment at 3 PM."
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Quick reminder: Virtual training at 1 PM. Log in on time, dost!"
+    ],
+    [
+        "normal",
+        "Family",
+        "Di, can you send me your famous biryani recipe? Craving it!"
+    ],
+    [
+        "fraud",
+        "Identity Theft",
+        "Warning! Suspicious activity on your PAN card. Verify immediately at http://pan-secureindia.com or face penalty!"
+    ],
+    [
+        "fraud",
+        "Phishing",
+        "Your Amazon order is on hold due to payment failure. Resolve now: http://amazon-indiafix.in"
+    ],
+    [
+        "fraud",
+        "Fake Delivery Scam",
+        "Urgent! Your Flipkart parcel is undelivered. Reschedule now at http://flipkart-quickfix.in/urgent or it will be cancelled tomorrow!"
+    ],
+    [
+        "normal",
+        "Service Inquiry",
+        "Hey, what are your charges for passport photo clicks in Kolkata?"
+    ],
+    [
+        "fraud",
+        "Job Offer Scam",
+        "Don’t Ignore! High salary job in Chennai, ₹40,000/month. Click: http://chennaiworkpro.net"
+    ],
+    [
+        "normal",
+        "Travel",
+        "Flight to Delhi got delayed by 2 hrs. Will text once I’m at the gate."
+    ],
+    [
+        "fraud",
+        "Impersonation",
+        "Warning! Your Aadhaar is suspended. Reactivate before penalty: http://aadhaar-updateindia.net"
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Team, let’s catch up for chai and discuss the new targets tomorrow at 11."
+    ],
+    [
+        "normal",
+        "Social",
+        "Bro, let’s watch the IPL match at my place tonight. Snacks on me!"
+    ],
+    [
+        "fraud",
+        "Loan Scam",
+        "Congratulations! Rs. 6 lakh loan sanctioned for you. Claim now at: http://quickloan.indifinance.com or call 9765432109."
+    ],
+    [
+        "normal",
+        "Work Update",
+        "Don’t forget the Diwali team celebration on Friday. Bring your vibes!"
+    ]
+]

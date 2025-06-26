@@ -1,0 +1,102 @@
+Label,Type,Text
+fraud,Emotional Manipulation,"Nani, it�s your favorite grandson. I�m stranded in Goa with no money. Send Rs. 3,000 at http://travelhelp-goa.in. I�m desperate!"
+fraud,Emotional Manipulation,"Uncle, it�s Aman. I�m in deep trouble in Ahmedabad. Need Rs. 9,000 to escape danger. Click http://safeguard-gujarat.in. Save my life!"
+fraud,Emotional Manipulation,"Mummy, I�ve been in a bike crash in Bangalore. I�m bleeding. Need Rs. 8,000 now. Click http://urgentcare-karnataka.net. Save me!"
+fraud,Emotional Manipulation,"Dad, I�ve been in a bike accident in Gurgaon. Need Rs. 6,500 for hospital bills. Click http://gurgaon-aid.in. I�m hurting, help me!"
+fraud,Fake Delivery Scam,"Hello madam, this is from the courier company. Your package is stuck due to unpaid customs duty. Please pay ₹1,850 online to release it today."
+normal,Work Update,"Project update: Client call at 2 PM. Join the Zoom link, okay?"
+normal,Family,"Papa, did you pick up my charger from the living room? I need it for my online class."
+normal,Travel,"Macha, metro timings have changed again yaar, you saw the new schedule?"
+normal,Service Inquiry,"I reached the shop but they said the item is out of stock, should I check the other branch?"
+normal,Work Update,Did you remember to submit the travel allowance form to HR or should I check with them tomorrow?
+fraud,Fake Delivery Scam,Congratulations! You've been chosen as our lucky winner for a new refrigerator. Kindly confirm your PAN and address to arrange free doorstep delivery.
+fraud,Fake Delivery Scam,ATTENTION! Your Myntra order missed delivery. Reschedule fast at http://myntra-redeliver.co.in before it�s sent back!
+fraud,Fake Delivery Scam,Urgent! Your Amazon parcel is delayed due to address error. Update at http://amazon-fixdelivery.co.in or it�s returned!
+fraud,Financial Fraud,"Dear customer, we noticed some unusual activity on your bank account. To secure your funds, kindly share your debit card number and OTP immediately. Act fast or your account will be blocked."
+fraud,Financial Fraud,"Dear customer, this is an urgent notice from your electric board. Your bill payment is overdue, and supply will be disconnected. Please confirm your card details to avoid interruption."
+fraud,Financial Fraud,Congratulations! You�ve won a Rs. 5 Lakh loan from ICICI. Claim now at http://icici-quickloan.co or miss out!
+fraud,Financial Fraud,Don�t ignore! Your HDFC credit card limit is reduced due to non-payment. Pay now: http://hdfc-cardpay.in or face penalties!
+fraud,Identity Theft,"Dear customer, your PAN card is scheduled for suspension due to incomplete KYC. Kindly share your date of birth and full PAN number to avoid deactivation. Call 1800-258-XXXX now."
+fraud,Identity Theft,"Hello, this is customer care from Reserve Bank of India. There’s a mismatch in your KYC documents. Kindly share your PAN and Aadhaar details now to avoid account suspension."
+fraud,Identity Theft,"Namaste sir, this is Suresh calling from the Income Tax department. There is an urgent notice against your PAN card. Please confirm your Aadhaar and date of birth to avoid legal action."
+fraud,Identity Theft,Fraud alert! Protect your Aadhaar from misuse. Click http://id-guardindia.net now or face severe consequences!
+fraud,Impersonation,"Hello, this is Ramesh from the Income Tax Department. There is a mismatch in your PAN details. To avoid penalty, kindly confirm your Aadhaar and bank account number now."
+fraud,Impersonation,GST Notice: Unpaid dues detected. Pay now to avoid penalty at http://gstpay-india.org or face arrest!
+fraud,Impersonation,"Hello madam, caller from Income Tax department. There is a case on your PAN card due to suspicious transactions. To avoid penalty, please verify your Aadhaar details with me now."
+fraud,Impersonation,"Dear Sir/Madam, your Ration Card benefits are expiring. Renew at http://ration-indiarenew.co or lose subsidy. Immediate action needed!"
+fraud,Investment Scams,"Congratulations! You've been selected for an exclusive investment plan with double returns in 6 months. To get started, send your full name and PAN to this number now. Limited seats only!"
+fraud,Investment Scams,"Good evening madam, I am calling from LIC India. There is a new investment policy for premium customers, double your returns in just three years. Can I help you start the process?"
+fraud,Investment Scams,"Hello madam, this is from Future Returns Investments. Our new scheme doubles your principal in just 6 months — very safe, government approved. Can I confirm your PAN to process your registration?"
+fraud,Investment Scams,Final warning! Miss this Chennai crypto deal & lose big. Invest today: http://chennaicryptohub.com
+fraud,Investment Scams,Last chance! Join our secret Nifty trading group & earn lakhs overnight. Hurry: http://niftyrich-india.com
+fraud,Job Offer Scam,"Namaste, this is Ramesh from HR department. For final round of your job interview at Infosys, we need a processing fee of Rs. 999. Please share your UPI details to proceed."
+fraud,Job Offer Scam,"High-Paying Job! ?25,000/week from Kolkata. No interview. Secure spot: http://koljobsfast.co.in"
+fraud,Job Offer Scam,"Congratulations! Your profile is shortlisted for a work-from-home typing job with Rs. 15,000 weekly income. Please WhatsApp your PAN details to 98459XXXXX to proceed."
+fraud,Job Offer Scam,IMMEDIATE HIRING! Earn ?800/day from home. No skills required. Hurry: http://easyjobindia.live
+fraud,Loan Scam,Get instant approval for your cash loan! Just share your PAN and Aadhar to fast-track the process. Call now on 9090201345. Limited slots only.
+fraud,Loan Scam,"Dear customer, you have been chosen for an exclusive SBI home loan offer at 2% interest! Please confirm your PAN and Aadhaar details to proceed."
+fraud,Loan Scam,"Hello, this is Bajaj Finance. You are pre-approved for a personal loan up to ₹5 lakh with 0% interest. To process, kindly share your Aadhaar number and PAN details now."
+fraud,Loan Scam,Instant loan of Rs. 7 lakhs waiting for you! Apply in 2 mins at http://easyfunds.bharatloan.in or lose this offer forever!
+fraud,Loan Scam,Struggling with bills? Rs. 3 lakh loan ready now. Click http://quickhelp.bharatrupee.co or lose this lifeline!
+fraud,Loan Scam,Struggling with EMIs? Rs. 5.5 lakh loan to rescue you. Act now: http://emihelp.bharatfund.in or call 8909876543!
+fraud,Loan Scam,Family in need? Rs. 4 lakh loan approved instantly. Secure at: http://safefund.loanhelp.in or lose this chance forever!
+fraud,Lottery Scam,"Congratulations! You’ve won a brand new Honda Activa in our lucky draw. To verify and process delivery, kindly share your full name and Aadhaar details with our agent. Call now, offer valid for today only."
+fraud,Lottery Scam,"Congratulations! Your mobile number has been randomly selected for a reward of ₹50,000. Kindly share your full name and bank details to process your winnings. Offer valid till today evening only."
+fraud,Lottery Scam,"Congrats! Your number is selected for a lucky draw prize. Please verify your account details to claim ₹50,000. Call 7550039442 now!"
+fraud,Lottery Scam,Lucky Winner! Rs. 3 lakh awaits you in KBC Lottery! Call 9876543210 or click http://kbcwin.officialprize.in to claim!
+fraud,Phishing,"Dear customer, your Paytm KYC is expiring soon. Please click the link sent to update your details or your wallet will be frozen."
+fraud,Phishing,Your SBI NetBanking has been suspended due to suspicious activity. Click the secure link to re-activate: tinyurl.com/sbi-help. Failure will block your account permanently.
+fraud,Phishing,"Hello madam, this is from IRCTC customer care. There was some suspicious activity on your account. Kindly share your OTP so we can secure it for you."
+fraud,Phishing,Immediate action required! Your Kotak account is compromised. Secure it: http://kotak-safeaccess.in
+fraud,Service Fraud,"Good afternoon, your electricity bill is pending due to a system error. To avoid immediate disconnection, please pay the outstanding amount now via UPI to securepower@upi."
+fraud,Service Fraud,"Warning! Your electricity bill is unpaid. Avoid power cut, pay immediately at http://powerbill-india.online!"
+fraud,Service Fraud,Hurry! Your Reliance broadband will be cut off. Secure it at http://reliance-netpay.co.in before it's too late!
+fraud,Service Fraud,Danger! Your Tata Sky subscription expires today. Renew urgently at http://tatasky-renewfast.com or lose access!
+fraud,Subscription Scam,Your Netflix subscription renewal failed. Please verify your card details at the link sent on SMS to avoid service interruption.
+fraud,Subscription Scam,"Hey, your JioCinema subscription is expiring soon. Renew at Rs.99 or miss out: http://jiocinema-recharge.in"
+fraud,Subscription Scam,Your Netflix account will auto-renew at Rs.799. Cancel now to save money: http://netflix-cancelplan.co
+fraud,Subscription Scam,"Hey, your JioCinema subscription is expiring soon. Renew at Rs.99 or miss out: http://jiocinema-recharge.in"
+fraud,Tech Support Scam,Warning! Virus detected on your device. Secure it urgently by calling 1-800-333-9876 before data loss!
+fraud,Tech Support Scam,Critical Alert! Your phone is infected with malware. Call our tech support at 1800-444-5678 now to save your data!
+fraud,Tech Support Scam,Help! Your personal data is being stolen. Call our tech team at 1-800-999-4455 to lock it down. Act before it's late!
+fraud,Tech Support Scam,PANIC! Your device is under attack. Secure it at http://techguard-india.live or face complete data wipe!
+normal,Delivery Update,"Just checked, your shoes arrived at the gate. Want me to keep them inside or leave at your door?"
+normal,Delivery Update,Your order has been dispatched. Expect it by tomorrow afternoon in Bangalore.
+normal,Delivery Update,Good news! Your parcel from Amazon is out for delivery. Should reach by 3 PM today.
+normal,Delivery Update,Your Myntra order has been dispatched. Delivery expected within 2 days in Chennai.
+normal,Education,"Did you submit the application for the campus fest, or should I handle it today?"
+normal,Education,"Bro, did you see the online results? I passed maths finally, ya! Thanks for helping."
+normal,Education,"Aunty, is the tuition class at 5 or they changed it again?"
+normal,Education,"Hey, did you finish the Chemistry assignment? Need help with the last question."
+normal,Entertainment,Heard you got the tickets for tonight? Let me know what time to meet at the gate.
+normal,Entertainment,"Hey, did you manage to get tickets for the Saturday night movie show, or should I try booking from my end?"
+normal,Entertainment,"Yo, IPL highlights last night were crazy! Did you see that last over? Let�s discuss."
+normal,Entertainment,"Hey, did you check out that new restaurant near MG Road? Food looks really good in the reviews."
+normal,Family,"Rohit, do you remember where we kept the electricity bill receipt? I need it for tomorrow’s paperwork."
+normal,Family,"Hey, can you send me that recipe video again? Amma wants to try it for dinner tonight."
+normal,Family,"Bhai, mom said to bring some dahi on your way back, ok? Don’t forget this time!"
+normal,Family,"Aunty, thanks for the awesome aloo parathas yesterday. Yum!"
+normal,Recreation,Will you be coming for badminton this evening or still working late?
+normal,Recreation,Let�s plan a trek to Lonavala next weekend. Monsoon vibes and maggi on the way!
+normal,Recreation,Let�s watch the India-Pakistan match at my place tonight. Snacks on me!
+normal,Recreation,Let�s go cycling near Powai Lake early tomorrow. Fresh air and a quick ride!
+normal,Service Inquiry,Outside food allowed at the venue? Or should I bring snacks for everyone?
+normal,Service Inquiry,"Hey, did you manage to recharge the DTH? The kids are asking for cartoons already."
+normal,Service Inquiry,"Just checked with the tailor, your suit will be ready by Friday evening. Do you want to pick it up or should I get it for you?"
+normal,Service Inquiry,Can you share the menu for North Indian thali at your restaurant?
+normal,Social,Are you free for a quick chat this evening or should I call you tomorrow?
+normal,Social,Can you check if my headphones are at your place? I think I left them last night.
+normal,Social,"Macha, did you check if the chaiwala near office started making samosas again?"
+normal,Social,You coming to the Ganpati visarjan tomorrow? Let�s go together!
+normal,Sports,Are you coming for cricket practice in the evening or should I update coach?
+normal,Sports,"Did you see the match last night? Dhoni’s six gave me goosebumps, man!"
+normal,Sports,Let�s watch the Kabaddi Pro League tonight. You in?
+normal,Sports,"Hey, our school team qualified for the state finals! So happy!"
+normal,Travel,"Nana, did you check if the train tickets got confirmed for next week?"
+normal,Travel,"Reached the hotel safely, the room is nice and wifi’s working fine. Let me know if you need anything from here."
+normal,Travel,"Just landed in Hyderabad, will reach the hotel in thirty minutes. Want to meet for dinner?"
+normal,Travel,Arriving in Chennai at 9 AM. Can we grab some idli-vada for breakfast?
+normal,Work Update,"Hey, I’m stuck in the metro—will reach office about 20 minutes late, okay?"
+normal,Work Update,"Did you see the email from HR? They moved the team meeting to Thursday morning, just letting you know."
+normal,Work Update,Can you please send me that Excel file again? I think my inbox deleted it by mistake.
+

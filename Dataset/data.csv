@@ -1,0 +1,256 @@
+text,label,scam_category
+"hello sir, your SBI account is compromised. Share your account number and PIN to secure it immediately.",fraud,Financial Fraud
+"hey, can you send me the meeting link for tomorrow? Thanks!",normal,na
+"hi, it's your friend Neha. I'm struggling with bills and need 10,000 INR.",intermediate,na
+"hello, i am from bank KYC team. Please share your Aadhar number to complete verification.",fraud,Identity Theft
+good morning! Hope you're having a great day.,normal,na
+"hi, it's your colleague Rakesh. I'm in a financial crisis and need 15,000 INR.",intermediate,na
+"hi, your Paytm account needs verification to continue. Please call 09876543211 to confirm your details.",fraud,Phishing
+can you pick up some groceries on your way home? Need milk and bread.,normal,na
+"hi, it's your neighbor Anil. I'm short on cash for groceries, can you send 3,000 INR? UPI: anil789@upi.",fraud,Emotional Manipulation
+"hi, this is from the Tax department. Call 09876543223 to discuss your filing.",fraud,Impersonation
+just saw your missed call. What's up?,normal,na
+"hi, this is from the Tax department. we need to discuss your filing.",intermediate,na
+"hi, your PhonePe account requires verification. Call 09876543217 to update.",fraud,Phishing
+thanks for the party invite! I'll be there by 7 PM.,normal,na
+"hi, your PhonePe account needs verification.",intermediate,na
+"hello, your Jio SIM will be deactivated in 24 hours. Share the OTP sent to your phone to activate.",fraud,Service Fraud
+"hey, can you share the recipe for that cake? It was delicious!",normal,na
+"hi, it's your old classmate Vikram. I'm short on rent and need 5,000 INR.",intermediate,na
+your Amazon account is locked! Click here to unlock: http://amazon.security.xyz and enter your details.,fraud,Phishing
+let's catch up soon. When are you free?,normal,na
+"hi, it's your niece Priya. I lost my wallet and need 2,000 INR for bus fare.",intermediate,na
+"hello, your HDFC loan EMI is overdue. Pay 10,000 INR via this link: http://hdfc.emi.xyz to avoid penalties.",fraud,Financial Fraud
+can you send me the address for the event? Got lost last time!,normal,na
+"hey, it's your friend Sanjay. Need 7,000 INR for a car repair.",intermediate,na
+"hello sir, i am from Aadhar office. Your Aadhar is suspended. Share your Aadhar number and OTP to reactivate.",fraud,Identity Theft
+happy birthday! Hope you have an amazing day!,normal,na
+"hi, it's your cousin Meena. I'm stuck at the airport and need 4,000 INR.",intermediate,na
+"this is Income Tax officer Patil. You owe 75,000 INR in taxes. Pay now or face jail. Call 09887654321.",fraud,Impersonation
+just checking if you're free for a call later today.,normal,na
+"hi, it's your colleague Priya. I'm behind on rent and need 6,000 INR.",intermediate,na
+"you've won a 10,000 INR Flipkart voucher! Claim it here: http://flipkart.lucky.xyz and enter your card details.",fraud,Phishing
+are you coming to the party tonight? Let me know!,normal,na
+"hey, it's your old friend Rohan. Need 5,000 INR for a medical bill.",intermediate,na
+"hello, your Airtel broadband will be disconnected tonight. Pay 2000 INR via UPI: airtelcare@okaxis.",fraud,Service Fraud
+"hey, can you send me the Zoom link for today's meeting?",normal,na
+"hi, it's your classmate Neeta. I'm in a pinch and need 2,000 INR.",intermediate,na
+"hello, your ICICI debit card is blocked. Share your card number and CVV to unblock it.",fraud,Financial Fraud
+"hi, let's grab dinner this weekend. Any place you prefer?",normal,na
+"hi, it's your uncle Vinod. Need 8,000 INR for a family issue.",intermediate,na
+"hello, i am from PAN card office. Your PAN needs linking to Aadhar. Share both numbers and OTP.",fraud,Identity Theft
+just finished the book you recommended. Loved it!,normal,na
+"hey, it's your neighbor Sunita. Need 4,000 INR for school fees.",intermediate,na
+"this is Tax officer Desai. You're eligible for a 15,000 INR refund. Share your bank details to process.",fraud,Impersonation
+"hey, are you free for a movie night on Saturday?",normal,na
+"hi, it's your friend Arjun. I'm short on cash and need 5,000 INR.",intermediate,na
+your Paytm account is at risk! Update KYC here: http://paytm.kycupdate.co and enter your details.,fraud,Phishing
+"hi, can you share the group photo from the party?",normal,na
+"hi, it's your cousin Rahul. Need 3,000 INR for a bus ticket.",intermediate,na
+"hello, your Vi SIM needs verification. Reply with the OTP to avoid disconnection.",fraud,Service Fraud
+"just checking in, how's your new job going?",normal,na
+"hey, it's your colleague Deepak. Need 6,000 INR for an emergency.",intermediate,na
+your Google Pay account is compromised! Secure it here: http://gpay.security.xyz and enter your details.,fraud,Phishing
+"hey, I'm at the mall. Need anything?",normal,na
+"hi, it's your friend Shalini. I'm struggling this month and need 4,000 INR.",intermediate,na
+"hello sir, your Axis Bank account is frozen. Share your account number and PIN to unfreeze it.",fraud,Financial Fraud
+"hi, can you confirm the time for tomorrow's call?",normal,na
+"hi, it's your neighbor Vikram. Need 5,000 INR for a repair.",intermediate,na
+"hello, i am from voter ID office. Your ID needs re-verification. Share your ID number and OTP.",fraud,Identity Theft
+"just saw your post, congrats on the promotion!",normal,na
+"hey, it's your classmate Anjali. Need 3,000 INR for a project.",intermediate,na
+"this is Police officer Verma. You're linked to a cybercrime. Pay 80,000 INR to avoid arrest. Call 09876543210.",fraud,Impersonation
+"hey, let's plan a hike this Sunday. You in?",normal,na
+"hi, it's your friend Manoj. Need 7,000 INR for a family matter.",intermediate,na
+"you've won a 20,000 INR Amazon voucher! Claim it here: http://amazon.winner.xyz and enter your bank details.",fraud,Phishing
+"hi, can you send me the recipe for your pasta dish?",normal,na
+"hi, it's your cousin Priyanka. Need 2,000 INR for travel.",intermediate,na
+"hello, your BSNL SIM will be blocked in 12 hours. Pay 500 INR via UPI: bsnlcare@okhdfc.",fraud,Service Fraud
+"just got home, thanks for the ride earlier!",normal,na
+"hey, it's your colleague Suresh. Need 5,000 INR for a bill.",intermediate,na
+"hello, your PNB account has unauthorized transactions. Share your account details and PIN to stop them.",fraud,Financial Fraud
+"hey, are we still meeting at the café at 5 PM?",normal,na
+"hi, it's your friend Kavita. I'm in a tight spot and need 4,000 INR.",intermediate,na
+"hello, i am from EPFO. Your PF account needs verification. Share your UAN and OTP now.",fraud,Identity Theft
+"hi, happy anniversary! Hope you guys have a great day!",normal,na
+"hi, it's your neighbor Rajesh. Need 6,000 INR for a medical expense.",intermediate,na
+"this is Tax officer Shah. You have a tax refund of 10,000 INR. Share your bank details to receive it.",fraud,Impersonation
+just watched that show you mentioned. It's awesome!,normal,na
+"hey, it's your friend Nisha. Need 3,000 INR for a personal issue.",intermediate,na
+your Flipkart account is at risk! Update details here: http://flipkart.security.co to continue shopping.,fraud,Phishing
+"hey, can you pick up some coffee on your way?",normal,na
+"hello, we're from the RTO. Your vehicle details need verification.",intermediate,na
+"hello, your JioFiber connection will be cut off. Pay 1500 INR via UPI: jiofiber@oksbi.",fraud,Service Fraud
+"hi, let me know when you're free to catch up.",normal,na
+"hi, this is the voter ID office. Your ID status needs confirmation.",intermediate,na
+"hello, your Canara Bank debit card is suspended. Share your card number and CVV to reactivate.",fraud,Financial Fraud
+just booked our tickets for the game. Excited!,normal,na
+"hello, we're from the bank KYC team. Your details need updating.",intermediate,na
+"hello, i am from RTO. Your vehicle registration needs verification. Share your RC number and OTP.",fraud,Identity Theft
+"hey, can you send me the presentation slides?",normal,na
+"hello, your Google account requires a security check.",intermediate,na
+"hello, we're from the RTO. Contact 09876543224 to verify your vehicle details.",fraud,Impersonation
+"hi, thanks for the gift! It's perfect.",normal,na
+"hi, your Flipkart account needs an update.",intermediate,na
+"hi, this is the voter ID office. Call 09876543225 to confirm your ID status.",fraud,Impersonation
+"just saw a funny meme, want me to send it?",normal,na
+"hello, your Paytm wallet needs confirmation.",intermediate,na
+"hello, we're from the bank KYC team. Contact 09876543226 to update your details.",fraud,Impersonation
+"hey, are you joining the team lunch tomorrow?",normal,na
+"hello, your Jio account needs a security review.",intermediate,na
+"hello, your Google account requires a security check. Contact 09876543214 to proceed.",fraud,Phishing
+"hi, can you remind me where we're meeting tonight?",normal,na
+"hi, your Airtel account needs an update.",intermediate,na
+"hi, your Flipkart account needs an update. Call 09876543215 to verify your details.",fraud,Phishing
+"just finished my workout, feeling great!",normal,na
+"hello, your JioFiber plan is expiring. Visit a Jio store to renew.",intermediate,na
+"hello, your Paytm wallet needs confirmation. Contact 09876543216 to continue.",fraud,Phishing
+"hey, let's try that new restaurant this weekend.",normal,na
+"hi, your Airtel SIM needs renewal. Visit an Airtel outlet to continue.",intermediate,na
+"hello, your Jio account needs a security review. Contact 09876543218 to confirm.",fraud,Phishing
+"hi, can you share the playlist from the party?",normal,na
+"hello, your Vi plan is due. Visit a store to renew.",intermediate,na
+"hi, your Airtel account needs an update. Call 09876543219 to proceed.",fraud,Phishing
+"just got your message, I'll call you later.",normal,na
+"hi, your BSNL broadband needs payment. Visit a BSNL center to renew.",intermediate,na
+"hello, your Kotak Bank loan is due. Pay 8000 INR via this link: http://kotak.emi.xyz to avoid fees.",fraud,Financial Fraud
+"hey, happy new year! Any plans for today?",normal,na
+"hello, your Vodafone plan is expiring. Visit a store to renew.",intermediate,na
+"hello sir, i am from income tax office. Your PAN is deactivated. Share your PAN and OTP to reactivate.",fraud,Identity Theft
+"hi, can you send me the address for the event?",normal,na
+"hi, your Disney+ Hotstar subscription is due. Contact support to update payment.",intermediate,na
+this is Police officer Rao. You're linked to a drug case. Pay 1 lakh INR to avoid jail. Call 09865432109.,fraud,Impersonation
+"just saw your email, I'll reply soon.",normal,na
+"hello, your Spotify plan needs renewal. Visit the website to update your details.",intermediate,na
+"you've won a 15,000 INR Myntra voucher! Claim it here: http://myntra.lucky.co and enter your card details.",fraud,Phishing
+"hey, are you free for a quick chat this evening?",normal,na
+"hi, your Netflix subscription is expiring. Contact customer care to renew.",intermediate,na
+"hello, your Disney+ Hotstar subscription is due. Pay 799 INR via this link: http://hotstar.renew.xyz.",fraud,Service Fraud
+"hi, thanks for helping with the project yesterday!",normal,na
+"hello, your Amazon Prime plan needs payment. Visit the website to update.",intermediate,na
+"hello, your Yes Bank account is at risk. Share your account number and PIN to secure it.",fraud,Financial Fraud
+"just booked a table for dinner, see you at 7!",normal,na
+"hi, your Jio SIM needs renewal. Visit a Jio outlet to continue.",intermediate,na
+"hello, i am from driving license office. Your license is expiring. Share your license number and OTP.",fraud,Identity Theft
+"hey, can you share the notes from today's meeting?",normal,na
+"hi, interested in mutual funds? Reply to learn about our investment options.",intermediate,na
+"this is Tax officer Kumar. You're eligible for a 20,000 INR refund. Share your bank details to process.",fraud,Impersonation
+"hi, let's plan a game night soon. You in?",normal,na
+"hello, want to explore crypto trading? Contact us to know more about our platform.",intermediate,na
+your Google account is compromised! Secure it here: http://google.security.xyz and enter your details.,fraud,Phishing
+"just got the concert tickets, can't wait!",normal,na
+"hi, looking to invest in stocks? Reply to learn about our investment options.",intermediate,na
+"hello, your Spotify subscription is expiring. Pay 899 INR via this link: http://spotify.renew.xyz.",fraud,Service Fraud
+"hey, can you confirm the date for the trip?",normal,na
+"hello, interested in real estate? Reply to learn more.",intermediate,na
+"hello sir, your IDBI account has been hacked. Share your account details and PIN to secure it.",fraud,Financial Fraud
+"hi, hope you're having a great week!",normal,na
+"hi, want to learn about forex trading? Reply to explore our platform.",intermediate,na
+"hello, i am from bank verification team. Share your PAN card number to complete KYC.",fraud,Identity Theft
+"just saw your new car, looks amazing!",normal,na
+invest in our trading app for good returns.,intermediate,na
+this is ED officer Singh. You're involved in a scam. Pay 1.5 lakh INR to clear it. Call 08787654321.,fraud,Impersonation
+"hey, let me know if you're free for coffee tomorrow.",normal,na
+join our real estate plan for great opportunities.,intermediate,na
+your Amazon Prime account is at risk! Update details here: http://amazon.primepay.xyz to continue.,fraud,Phishing
+thanks for the book recommendation! I'm loving it so far.,normal,na
+invest in our forex trading bot for profits.,intermediate,na
+"hello sir, i am from UIDAI. Your Aadhar needs re-verification. Share your Aadhar number and OTP.",fraud,Identity Theft
+"hey, want to grab lunch this weekend?",normal,na
+invest in our startup for growth.,intermediate,na
+"this is Police officer Sharma. You're linked to a cybercrime. Pay 90,000 INR to avoid arrest. Call 09876543210.",fraud,Impersonation
+can you send me the pics from the trip? Thanks!,normal,na
+invest in our bitcoin platform for returns.,intermediate,na
+"invest 30,000 INR in our crypto fund and earn 50% returns in 2 months. Call 09087654321 for details.",fraud,Investment Scams
+"just checking in, how's everything going?",normal,na
+invest in our stock trading platform for gains.,intermediate,na
+"hi, your Amazon account needs a review.",intermediate,na
+"hello, your Spotify account needs attention.",intermediate,na
+"hi, this is from the bank. Your account needs attention.",intermediate,na
+"hello, we're from the EPFO. Your PF account needs a review.",intermediate,na
+"hi, it's your friend Rohit. I need some help with cash.",intermediate,na
+"hi, it's your cousin Anil. I'm in an emergency and need 30,000 INR.",intermediate,na
+"hi, it's your uncle Ravi. I'm in jail and need 50,000 INR for bail.",intermediate,na
+"hi, it's your friend Priya. My child is sick and need 25,000 INR for surgery.",intermediate,na
+"hi, it's your neighbor Sunil. My house was robbed, need 25,000 INR for repairs.",intermediate,na
+"hi, it's your aunt Suman. I need 20,000 INR for medical bills.",intermediate,na
+"hi, it's your cousin Vinod. I'm in a car accident and need 30,000 INR for repairs.",intermediate,na
+"hi, it's your brother Sanjay. I'm in debt and need 40,000 INR to avoid trouble.",intermediate,na
+"hi, it's your friend Amit. I need 10,000 INR for an urgent bill.",intermediate,na
+"hi, it's your colleague Neeraj. I'm short on cash and need 15,000 INR.",intermediate,na
+"hi, it's your neighbor Preeti. Need 5,000 INR for groceries.",intermediate,na
+"hey, it's your friend Varun. Need 8,000 INR for a family emergency.",intermediate,na
+"hi, it's your cousin Sonia. I'm stuck and need 6,000 INR for travel.",intermediate,na
+"hi, it's your colleague Ritu. Need 7,000 INR for a medical expense.",intermediate,na
+"hey, it's your friend Karan. Need 4,000 INR for a repair.",intermediate,na
+"hi, it's your uncle Mahesh. Need 9,000 INR for a bill.",intermediate,na
+"hi, it's your neighbor Lakshmi. Need 3,000 INR for school fees.",intermediate,na
+"hey, it's your friend Divya. Need 5,000 INR for a personal issue.",intermediate,na
+"hi, it's your cousin Rohit. Need 2,000 INR for a bus ticket.",intermediate,na
+"hi, it's your colleague Anil. Need 6,000 INR for an emergency.",intermediate,na
+"hey, it's your friend Meera. Need 4,000 INR for a bill.",intermediate,na
+"hi, it's your neighbor Sanjay. Need 5,000 INR for a repair.",intermediate,na
+"hi, it's your friend Pooja. Need 3,000 INR for a project.",intermediate,na
+"hey, it's your cousin Nikhil. Need 7,000 INR for a family matter.",intermediate,na
+"hi, it's your colleague Shalini. Need 2,000 INR for travel.",intermediate,na
+"hey, it's your friend Vikrant. Need 5,000 INR for a medical bill.",intermediate,na
+"congratulations! your personal loan of 84026 INR is ready. To disburse, pay 792 INR to our account.",fraud,Loan Scam
+"congratulations! your personal loan of 45891 INR is ready. To disburse, pay 225 INR to our account.",fraud,Loan Scam
+"congratulations! your personal loan of 55972 INR is ready. To disburse, pay 679 INR to our account.",fraud,Loan Scam
+"hello sir, your loan of 26872 INR is approved. Please pay 906 INR as processing fee to release the funds.",fraud,Loan Scam
+"congratulations! your personal loan of 95448 INR is ready. To disburse, pay 766 INR to our account.",fraud,Loan Scam
+"congratulations! your personal loan of 80683 INR is ready. To disburse, pay 518 INR to our account.",fraud,Loan Scam
+"hello sir, your loan of 14284 INR is approved. Please pay 619 INR as processing fee to release the funds.",fraud,Loan Scam
+"congratulations! your personal loan of 38530 INR is ready. To disburse, pay 391 INR to our account.",fraud,Loan Scam
+"congratulations! your personal loan of 32370 INR is ready. To disburse, pay 344 INR to our account.",fraud,Loan Scam
+"congratulations! your personal loan of 22623 INR is ready. To disburse, pay 681 INR to our account.",fraud,Loan Scam
+you've been selected for a job at Reliance. Pay 243 INR for background verification to proceed.,fraud,Job Offer Scam
+you've been selected for a job at Google. Pay 588 INR for background verification to proceed.,fraud,Job Offer Scam
+your resume was shortlisted for a job at Wipro. Send 679 INR as registration fee to confirm interview.,fraud,Job Offer Scam
+your resume was shortlisted for a job at Google. Send 241 INR as registration fee to confirm interview.,fraud,Job Offer Scam
+you've been selected for a job at Wipro. Pay 415 INR for background verification to proceed.,fraud,Job Offer Scam
+your resume was shortlisted for a job at Reliance. Send 779 INR as registration fee to confirm interview.,fraud,Job Offer Scam
+your resume was shortlisted for a job at Infosys. Send 760 INR as registration fee to confirm interview.,fraud,Job Offer Scam
+you've been selected for a job at Google. Pay 491 INR for background verification to proceed.,fraud,Job Offer Scam
+you've been selected for a job at TCS. Pay 154 INR for background verification to proceed.,fraud,Job Offer Scam
+you've been selected for a job at TCS. Pay 719 INR for background verification to proceed.,fraud,Job Offer Scam
+"dear user, your number has won 27683 INR. Send 294 INR as processing fee to get your prize.",fraud,Lottery Scam
+"dear user, your number has won 63618 INR. Send 979 INR as processing fee to get your prize.",fraud,Lottery Scam
+"congrats! you've won a lottery of 98721 INR. To claim, pay 890 INR tax to this UPI ID: lotterywin@upi.",fraud,Lottery Scam
+"congrats! you've won a lottery of 51386 INR. To claim, pay 977 INR tax to this UPI ID: lotterywin@upi.",fraud,Lottery Scam
+"congrats! you've won a lottery of 48081 INR. To claim, pay 900 INR tax to this UPI ID: lotterywin@upi.",fraud,Lottery Scam
+"dear user, your number has won 94049 INR. Send 662 INR as processing fee to get your prize.",fraud,Lottery Scam
+"congrats! you've won a lottery of 37978 INR. To claim, pay 338 INR tax to this UPI ID: lotterywin@upi.",fraud,Lottery Scam
+"dear user, your number has won 10613 INR. Send 577 INR as processing fee to get your prize.",fraud,Lottery Scam
+"dear user, your number has won 58386 INR. Send 668 INR as processing fee to get your prize.",fraud,Lottery Scam
+"congrats! you've won a lottery of 85287 INR. To claim, pay 834 INR tax to this UPI ID: lotterywin@upi.",fraud,Lottery Scam
+your Netflix subscription is hacked. Pay 224 INR now to reactivate.,fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 608 INR immediately to avoid disruption.",fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 145 INR immediately to avoid disruption.",fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 352 INR immediately to avoid disruption.",fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 124 INR immediately to avoid disruption.",fraud,Subscription Scam
+your Netflix subscription is hacked. Pay 751 INR now to reactivate.,fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 377 INR immediately to avoid disruption.",fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 722 INR immediately to avoid disruption.",fraud,Subscription Scam
+"hello, your Amazon Prime account will be suspended. Send 634 INR immediately to avoid disruption.",fraud,Subscription Scam
+your Netflix subscription is hacked. Pay 376 INR now to reactivate.,fraud,Subscription Scam
+your Windows license is expired. Pay 440 INR to renew or your PC will shut down.,fraud,Tech Support Scam
+we detected a virus on your system. Pay 404 INR to our technician for immediate support.,fraud,Tech Support Scam
+we detected a virus on your system. Pay 301 INR to our technician for immediate support.,fraud,Tech Support Scam
+we detected a virus on your system. Pay 474 INR to our technician for immediate support.,fraud,Tech Support Scam
+we detected a virus on your system. Pay 785 INR to our technician for immediate support.,fraud,Tech Support Scam
+your Windows license is expired. Pay 755 INR to renew or your PC will shut down.,fraud,Tech Support Scam
+your Windows license is expired. Pay 222 INR to renew or your PC will shut down.,fraud,Tech Support Scam
+your Windows license is expired. Pay 756 INR to renew or your PC will shut down.,fraud,Tech Support Scam
+your Windows license is expired. Pay 692 INR to renew or your PC will shut down.,fraud,Tech Support Scam
+we detected a virus on your system. Pay 686 INR to our technician for immediate support.,fraud,Tech Support Scam
+courier delivery pending. Please pay 666 INR to confirm address verification.,fraud,Fake Delivery Scam
+your parcel is stuck at customs. Pay 375 INR clearance fee to receive it.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 516 INR to confirm address verification.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 692 INR to confirm address verification.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 224 INR to confirm address verification.,fraud,Fake Delivery Scam
+your parcel is stuck at customs. Pay 654 INR clearance fee to receive it.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 831 INR to confirm address verification.,fraud,Fake Delivery Scam
+your parcel is stuck at customs. Pay 775 INR clearance fee to receive it.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 940 INR to confirm address verification.,fraud,Fake Delivery Scam
+courier delivery pending. Please pay 352 INR to confirm address verification.,fraud,Fake Delivery Scam
