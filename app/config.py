@@ -19,9 +19,9 @@ HF_MODEL_KWARGS = {
 DENSE_VECTOR_NAME = "dense"
 DENSE_DISTANCE_METRIC = "COSINE"
 
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "dLbxCKdmrveV42xGDQQKOZ7PEnoXtjTASJET6JK1cdovLAk7WCvtJQQJ99BEACHYHv6XJ3w3AAAAACOG8UMJ")
-AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "https://mha2c-mabd2a4o-eastus2.cognitiveservices.azure.com/")
-AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2025-04-01-preview")  # or the version you use
-AZURE_OPENAI_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "gpt-4.1")  # e.g., "gpt-35-turbo" or "gpt-4"
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "")  # or the version you use
+AZURE_OPENAI_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "")  # e.g., "gpt-35-turbo" or "gpt-4"
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBwensyPgaAPJffJ57a-b5NVmwsDmfbCjs")
