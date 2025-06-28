@@ -224,7 +224,7 @@ cd fraud_app
 pip install -r requirements.txt
 
 # Start the Streamlit UI
-streamlit run main.py
+streamlit run Home.py
 ```
 
 ## Usage
