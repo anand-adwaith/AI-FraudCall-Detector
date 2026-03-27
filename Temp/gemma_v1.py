@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, BitsAndBytesConfig, Gemma3ForCausalLM
 import torch
-HF_READ = "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"
-HF_WRITE = "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"
+HF_READ = "your_hugging_face_token_for_gemma"  # replace with your Hugging Face read token
+HF_WRITE = "your_hugging_face_token_for_gemma"  # replace with your Hugging Face write token
 #set the environment variables for Hugging Face authentication
 import os
 os.environ["HF_READ_TOKEN"] = HF_READ

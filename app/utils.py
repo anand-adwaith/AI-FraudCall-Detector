@@ -4,6 +4,7 @@ from typing import Dict, Any, Optional
 from pathlib import Path
 import time
 from functools import wraps
+import os
 
 # Configure logging
 logging.basicConfig(
@@ -108,7 +109,7 @@ class ModelManager:
                 return None, cls._text_few_shot_llm
     
     @classmethod
-    def initialize_gemma(cls, hf_token: str = "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"):
+    def initialize_gemma(cls, hf_token: str = "your_hugging_face_token_for_gemma"): # replace with your Hugging Face token
         """
         Initialize the Gemma model and tokenizer
         
@@ -171,7 +172,7 @@ class ModelManager:
         return cls._gemma_model, cls._gemma_tokenizer
     
     @classmethod
-    def initialize_llama(cls, hf_token: str = "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"):
+    def initialize_llama(cls, hf_token: "your_hugging_face_token_for_llama"): # replace with your Hugging Face token
         """
         Initialize the Llama 3.2 model pipeline
         

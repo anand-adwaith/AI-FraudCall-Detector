@@ -24,4 +24,4 @@ AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
 AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "")  # or the version you use
 AZURE_OPENAI_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "")  # e.g., "gpt-35-turbo" or "gpt-4"
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBwensyPgaAPJffJ57a-b5NVmwsDmfbCjs")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")

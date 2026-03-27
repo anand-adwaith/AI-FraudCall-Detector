@@ -6,7 +6,7 @@ pipe = pipeline(
     model=model_id,
     torch_dtype=torch.bfloat16,
     device_map="auto",
-    token="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"
+    token="your_hugging_face_token_for_llama"  # replace with your Hugging Face token
 )
 messages = [
     {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"},
